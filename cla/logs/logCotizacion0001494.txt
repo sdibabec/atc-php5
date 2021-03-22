@@ -1,0 +1,49 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1061,
+                            '2020-09-10 08:00',
+                            '06:00',
+                            'WA==',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-08-27 11:18:30',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1494, 277, 1, 2, 1500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1494, 233, 1, 2, 0.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1494, 232, 4, 2, 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1494, '1 Door man', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-19 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'WA==',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001494 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001494, 277, 1, 2, 1500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001494, 233, 1, 2, 0.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001494, 232, 4, 2, 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001494, '1 Door man', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001494, 'Pasillo de 96 cms x 2.97 mts ', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001494, '3 Uni filas', 0.00,0) 
+
+

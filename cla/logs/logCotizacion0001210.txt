@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            937,
+                            '2020-02-29 11:00',
+                            '09:00',
+                            'Q3Jpc3RvIFJleSBteiA0IEx0IDEsIEJhcnJpbyBTYW4gSnVhbiBYb2NoaXRlbmNvLiBDaGltYWxodWFjYW4gDQpFbnRyZSBBdi4gQ296YW1hbG9jIHkgQXYuIEFjYWxvdGUgY2VyY2EgZGVsIGRlcG9ydGl2byBlbCBQaXBpbGEg',
+                            'UEINCkNpdGEgTWllcmNvbGVzIDEyIGRlIEZlYnJlcm8gMTE6MDAgYW0g',
+                            1,
+                            NULL,
+                            '2020-02-11 12:43:15') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1210, 4, 1, 1, 4900.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1210, 'Penalizacion por distancia 15%', 735,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1210, 'Visita promotora', 500,0) 
+
+

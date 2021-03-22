@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            19,
+							2,
+                            1022,
+                            '2020-03-14 12:30',
+                            '10:30',
+                            'TmVicmFza2EgIzIwIC0gNTA0IENvbC4gTmFwb2xlcy4gQmVuaXRvIEp1YXJleg0K',
+                            'NSBwaXNvcyBwb3IgZXNjYWxlcmEg',
+                            2,
+                            NULL,
+                            '2020-03-13 15:52:07',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1378, 63, 6, 2, 510.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1378, 63, 6, 2, 510.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1378, 60, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1378, '4 pisos por escalera ', 400,0) 
+
+

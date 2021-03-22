@@ -1,0 +1,158 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            896,
+                            '2020-02-01 02:30',
+                            '00:30',
+                            'eA==',
+                            'eA==',
+                            1,
+                            NULL,
+                            '2020-01-24 07:51:20') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1145, 255, 1, 1, 6600.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 255, 1, 1, 6600.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 116, 1, 1, 6600.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 254, 1, 1, 4800.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 352, 1, 1, 9075.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 301, 1, 2, 0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 352, 1, 1, 9075.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 301, 1, 2, 500.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 130, 6, 1, 5100.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 94, 6, 1, 1890.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 254, 1, 1, 0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 254, 1, 1, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 94, 6, 1, 1890.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 130, 6, 1, 5100.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'TGlyaW9zIDMyIE16IDUgTHQgMTkgQ29sLiBSYW5jaG8gU2FuIFJhZmFlbCwgVGxhbG5lcGxh',
+                            tObservaciones = 'Q2l0YSBrYXJlbiBEb21pbmdvICAyNiBlbmVybyAyMCAxMTowMCBhbQ==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 242, 1, 1, 8200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 301, 1, 2, 0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 102, 9, 2, 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001145, '2 horas extras para dejar mobiliario ', 2300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001145, 'Distancia', 1400,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'TGlyaW9zIDMyIE16IDUgTHQgMTkgQ29sLiBSYW5jaG8gU2FuIFJhZmFlbCwgVGxhbG5lcGxh',
+                            tObservaciones = 'Q2l0YSBrYXJlbiBEb21pbmdvICAyNiBlbmVybyAyMCAxMTowMCBhbQ==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 242, 1, 1, 8200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 301, 1, 2, 500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001145, '2 horas extras para dejar mobiliario ', 2300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001145, 'Distancia', 1400,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 02:30',
+                            tmHoraMontaje = '00:30',
+                            tDireccion = 'TGlyaW9zIDMyIE16IDUgTHQgMTkgQ29sLiBSYW5jaG8gU2FuIFJhZmFlbCwgVGxhbG5lcGxh',
+                            tObservaciones = 'Q2l0YSBrYXJlbiBEb21pbmdvICAyNiBlbmVybyAyMCAxMTowMCBhbQ==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001145 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001145, 242, 1, 1, 8200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001145, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001145, '2 horas extras para dejar mobiliario ', 2300,0) 
+
+

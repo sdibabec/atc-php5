@@ -1,0 +1,28 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            978,
+                            '2020-02-28 11:00',
+                            '09:00',
+                            'QXYgU3RhIEZlICM1OTYgLSAxMDcsIENvbC4gTG9tYXMgZGUgU2FudGEgRmUsIENvbnRhZGVyby4gQ3VhamltYWxwYSBkZSBNb3JlbG9zDQpGcmVudGUgYSBTdXBlcmFtYSBTYW50YSBGZQ==',
+                            'Q2l0YSBNaWVyY29sZXMgMjYgZGUgRmVicmVybyAxMTowMCBhbSA=',
+                            1,
+                            NULL,
+                            '2020-02-25 14:20:30') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1270, 389, 1, 1, 6775.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1270, 'Hora extra paquete 50 puff/periqueras', 1800,0) 
+
+

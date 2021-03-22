@@ -1,0 +1,55 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1062,
+                            '2020-09-04 18:00',
+                            '16:00',
+                            'UHVlcnRvICBkZSBsYSBQYXogIyAyMCBDb2wuIEFtcGwuIENhc2FzIEFsZW1hbiwgZW50cmUgQ2FtaW5vIGEgc2FuIEp1YW4gZGUgQXJhZ8OzbiB5IFB1ZXJ0byBUYW1waWNvLg==',
+                            'Q2l0YSBKdWV2ZXMgMjcgYWdvc3RvICAxNzowMCBocnMg',
+                            1,
+                            NULL,
+                            '2020-08-27 12:15:53',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1495, 15, 1, 1, 6100.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-04 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'UHVlcnRvICBkZSBsYSBQYXogIyAyMCBDb2wuIEFtcGwuIENhc2FzIEFsZW1hbiwgZW50cmUgQ2FtaW5vIGEgc2FuIEp1YW4gZGUgQXJhZ8OzbiB5IFB1ZXJ0byBUYW1waWNvLg==',
+                            tObservaciones = 'RWwgcGFxdWV0ZSBlcyBwYXJhIDIwIHBlcnNvbmFzIDUsMzUwICsgMSwyMDAuMDAgS2FyYW9rZSA9ICQ2LDU1MC4wMCAtICQ1MDAuMDAgY2l0YSAkNiwwNTAuMDANCkVzcGFjaW8gcmVkdWNpZG8sIGF1ZGlvIHkgYmFycmEgYWwgZm9uZG8gZGVsIHBhdGlvLiBFcXVpcG8gZGUgY29jdGVsZXJpYS4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001495 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001495, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001495, 'karaoke con pantalla 40"', 420,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-04 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'UHVlcnRvICBkZSBsYSBQYXogIyAyMCBDb2wuIEFtcGwuIENhc2FzIEFsZW1hbiwgZW50cmUgQ2FtaW5vIGEgc2FuIEp1YW4gZGUgQXJhZ8OzbiB5IFB1ZXJ0byBUYW1waWNvLg==',
+                            tObservaciones = 'RWwgcGFxdWV0ZSBlcyBwYXJhIDIwIHBlcnNvbmFzIDUsMzUwICsgMSwyMDAuMDAgS2FyYW9rZSA9ICQ2LDU1MC4wMCAtICQ1MDAuMDAgY2l0YSAkNiwwNTAuMDANCkVzcGFjaW8gcmVkdWNpZG8sIGF1ZGlvIHkgYmFycmEgYWwgZm9uZG8gZGVsIHBhdGlvLiBFcXVpcG8gZGUgY29jdGVsZXJpYS4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001495 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001495, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001495, 'karaoke con pantalla 40', 450,0) 
+
+

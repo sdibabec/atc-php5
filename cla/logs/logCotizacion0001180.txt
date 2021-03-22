@@ -1,0 +1,40 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            915,
+                            '2020-02-07 17:00',
+                            '15:00',
+                            'SG90ZWwgSGlsdG9uIFJlZm9ybWE=',
+                            'Q290aXphY2lvbg==',
+                            2,
+                            1,
+                            '2020-02-04 15:26:19') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1180, 13, 15, 2, 975.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1180, 'Renta por 2 dias', 975,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-07 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'SG90ZWwgSGlsdG9uIFJlZm9ybWE=',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = 1
+                            WHERE eCodEvento = 0001180 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001180, 13, 15, 2, 975.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001180, 'Renta por 2 dias', 975,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001180, 'Horario entrega Jueves 18 hrs', 150,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001180, 'Horario recoleccion sabado 21 hrs', 200,0) 
+
+

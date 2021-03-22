@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            979,
+                            '2020-02-29 20:00',
+                            '18:00',
+                            'RmVybmFuZGV6IExlYWwgIzYyLCBpbnRlcmlvciAzOC4gQ29sb25pYSBCYXJyaW8gbGEgQ29uY2VwY2lvbi4gQ295b2FjYW4uIA0KRW50cmUgQXYuIE1pZ3VlbCBIaWRhbGdvIHkgQXYuIFBhY2lmaWNvLiA=',
+                            'QWNjZXNvIGVuIHBsYW50YSBiYWphLiBQb3IgcmVnbGFzIGRlbCBjb25kb21pbmlvIGRlc3B1ZXMgZGUgbGFzIDI6MDAgZGUgbGEgdGFyZGUgeWEgbm8gcHVlZGVuIGVudHJhciBjYW1pb25lcyBhbHRvcyBhIGhhY2VyIGVudHJlZ2FzLCBzb2xvIHB1ZWRlbiBwYXNhciBjYW1pb25ldGFzIGRlc3B1ZXMgZGUgZXNhIGhvcmEu',
+                            1,
+                            NULL,
+                            '2020-02-26 11:47:13') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1272, 126, 1, 1, 650.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1272, 120, 1, 1, 1000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1272, 102, 6, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1272, 'Operador de pista  ', 0.00,0) 
+
+

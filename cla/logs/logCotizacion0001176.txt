@@ -1,0 +1,49 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            912,
+                            '2020-02-15 07:30',
+                            '05:30',
+                            'Q29sLiBOYXJ2YXJ0ZSAtIFNpbiBBdWRpbyAgU2luIElsdW1pbmFjaW9u',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-02-01 15:55:41') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1176, 372, 1, 1, 9500.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-15 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q29sLiBOYXJ2YXJ0ZSAtIFNpbiBBdWRpbyAgU2luIElsdW1pbmFjaW9u',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001176 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001176, 373, 1, 1, 11500.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-15 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q29sLiBOYXJ2YXJ0ZSA=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001176 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001176, 373, 1, 1, 11500.00,0) 
+
+

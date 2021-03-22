@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1257,
+                            '2021-02-20 09:00',
+                            '07:00',
+                            'U3IuIEF0bCA5IG16IDkgQ29sLiBCZWxpc2FyaW8gRG9taW5ndWV6LCBUbGFscGFuLCBlbnRyYXIgcG9yIERpdi4gZGVsIE5vcnRlIGEgbGFkbyBkZSB1bmEgQmVub3R0byB5IE1pY2hvYWNhbmE=',
+                            'UC5CLiBzaW4gcHJvYmxlbWEgZGUgYWNjZXNvLg==',
+                            2,
+                            NULL,
+                            '2021-02-19 15:56:16',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1826, 266, 2, 1, 1040.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1826, '2 Sombrillas de natos', 700,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1826, 'Renta por 2 dias y descuento ', 1566,0) 
+
+

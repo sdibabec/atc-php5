@@ -1,0 +1,44 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1267,
+                            '2021-03-13 17:00',
+                            '15:00',
+                            'QWd1c3RpbiBkZSBJdHVyYmlkZSAjIDcgQ29sLiBBc3VuY2lvbiwgVGxhaHVhYywgZW50cmUgUmVmb3JtYSBBZ3JhcmlhIHkgR3VhZGFsdXBlIFZpY3Rvcmlh',
+                            'UC5CLiBlbiBlbCBqYXJkw61uIGRlIGxhIGNhc2Eu',
+                            1,
+                            NULL,
+                            '2021-03-11 17:59:31',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1846, 331, 1, 2, 550.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-03-13 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'QWd1c3RpbiBkZSBJdHVyYmlkZSAjIDcgQ29sLiBBc3VuY2lvbiwgVGxhaHVhYywgZW50cmUgUmVmb3JtYSBBZ3JhcmlhIHkgR3VhZGFsdXBlIFZpY3Rvcmlh',
+                            tObservaciones = 'UC5CLiBlbiBlbCBqYXJkw61uIGRlIGxhIGNhc2Eu',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001846 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001846, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001846, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001846, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001846, 'Flete a Tlahuac', 400,0) 
+
+

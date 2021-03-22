@@ -1,0 +1,62 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1124,
+                            '2020-11-06 06:00',
+                            '04:00',
+                            'Q2xpZW50ZSByZWNvZ2UgeSBlbnRyZWdhIGVsIG1vYmlsaWFyaW8gZW4gb2ZpY2luYXMu',
+                            'WA==',
+                            2,
+                            NULL,
+                            '2020-11-05 12:18:44',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1630, 58, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1630, 57, 1, 2, 270.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1630, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1630, 'Renta por 4 dias', 2610,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1630, 'Se le cobraría dia y medio por lo días del montaje', 1305,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-06 06:00',
+                            tmHoraMontaje = '04:00',
+                            tDireccion = 'Q2xpZW50ZSByZWNvZ2UgeSBlbnRyZWdhIGVsIG1vYmlsaWFyaW8gZW4gb2ZpY2luYXMu',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001630 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 58, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 57, 1, 2, 270.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001630, 'Renta por 4 dias', 2610,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001630, 'Se le cobraria dia y medio por lo dias del montaje', 1305,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-06 06:00',
+                            tmHoraMontaje = '04:00',
+                            tDireccion = 'Q2xpZW50ZSByZWNvZ2UgeSBlbnRyZWdhIGVsIG1vYmlsaWFyaW8gZW4gb2ZpY2luYXMu',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001630 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 57, 2, 2, 540.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 58, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001630, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001630, 'Renta por 4 dias', 2820,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001630, 'Se le cobraria dia y medio por los dias de montaje', 1410,0) 
+
+

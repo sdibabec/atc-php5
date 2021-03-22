@@ -1,0 +1,64 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-12-12 20:00',
+                            '18:00',
+                            'Q290aXphY2lvbiwgU3IuIEpvc2UgQW50b25pbyBZYW5leg==',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-11-18 15:06:49',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1656, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1656, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1656, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1656, '2 Calentador para exterior tipo Hongo ', 2500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-12 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'Q290aXphY2lvbiwgU3IuIEpvc2UgQW50b25pbyBZYW5leg==',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001656 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001656, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001656, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001656, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001656, '2 Calentador para exterior tipo Hongo ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001656, 'Galopina', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-12 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'Q290aXphY2lvbiwgU3IuIEpvc2UgQW50b25pbyBZYW5leg==',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001656 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001656, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001656, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001656, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001656, '2 Calentador para exterior tipo Hongo ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001656, 'Galopina', 550,0) 
+
+

@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1200,
+                            '2020-12-17 16:00',
+                            '14:00',
+                            'Qmx2ZC4gRGUgbG9zIFZpcnJleWVzIDg1NSBMb21hcyBkZSBDaGFwdWx0ZXBlYywgTS4gSGlkYWxnbyAgZW50cmUgQXYuIEV4cGxhbmFkYSB5IExvcGUgRGlheiBBcm1lbmRhcml6',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2020-12-17 13:00:38',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1749, 159, 8, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1749, 52, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1749, '8 sillas periqueras tempus ', 400,0) 
+
+

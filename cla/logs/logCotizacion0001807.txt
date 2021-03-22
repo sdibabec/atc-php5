@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            643,
+                            '2021-02-06 14:00',
+                            '12:00',
+                            'QW1zdGVyZGFtICMgMjI2IC0gMTAyIENvbC4gSGlwb2Ryb21vIENvbmRlc2EsIEN1YXVodGVtb2MgZW50cmUgTWljaG9hY2FuICBlIEl6dGFjY2lodWF0bC4g',
+                            'QWNjZXNvIHBvciBlbGV2YWRvciBhIGxhIHRlcnJhemEuIA0KTHVnYXIgeSBjbGllbnRlIGNvbm9jaWRvLg==',
+                            2,
+                            NULL,
+                            '2021-02-04 13:19:28',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1807, 387, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1807, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1807, '20 sillas tiffany', 660,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1807, '2 manteles redondos uno rosa  pastel y azul pastel', 200,0) 
+
+

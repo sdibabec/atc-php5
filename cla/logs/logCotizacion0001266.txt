@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            974,
+                            '2020-02-29 14:00',
+                            '12:00',
+                            'Q2FsbGUgNzEgIzM5LCBDb2wuIFB1ZWJsYSwgVmVudXN0aWFubyBDYXJyYW56YSwgDQpDYXNhIGRlIGZhY2hhZGEgYmxhbmNhIGNvbiB6YWd1YW4gY29sb3IgY29icmUsIGVudHJlIEF2ZW5pZGEgNCB5IEF2ZW5pZGEgNg0K',
+                            'YSAyIGN1YWRyYXMgZGUgTWV0cm8gWmFyYWdvemEgZGlyZWNjaW9uIFBhbnRpdGxhbi4NClBCDQpTQUxBIE1PRFVMQVIgQ0hJQ0EgMTAgUEFYICQ5NTAgKEJMQU5DQSBZIE5FR1JBKSArICQxNTAgRkxFVEUgPSAkMSwxMDA=',
+                            2,
+                            NULL,
+                            '2020-02-22 17:45:50') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1266, 63, 5, 2, 425.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1266, 74, 5, 2, 425.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1266, 'Flete ', 150,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1266, 'Mesa lounge iluminada ', 100,0) 
+
+

@@ -1,0 +1,33 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2021-03-13 07:00',
+                            '05:00',
+                            'Q290aXphY2lvbiwgU3IuIEFydHVybyBBbHRhbWlyYW5v',
+                            'RGVsIG1ldHJvIFRsYWh1YWMgYSA1IG1pbnV0b3Mu',
+                            1,
+                            NULL,
+                            '2021-03-10 17:03:47',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1842, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1842, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1842, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1842, 6, 2, 2, 500.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1842, '2 panel led de cortesia', 0.00,0) 
+
+

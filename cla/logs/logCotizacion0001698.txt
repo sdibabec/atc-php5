@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1048,
+                            '2020-12-04 11:00',
+                            '09:00',
+                            'Qm9zcXVlIGRlIExpbWFzICMgIDY2IC0xMDIgQ29sLiBCb3NxdWUgZGUgbGFzIExvbWFzLCBDdWFqaW1hbHBhIGVudHJlIEJvc3F1ZSBkZSBaYXJ6YXMgeSBCb3NxdWUgZGUgVGVqb3M=',
+                            'UC5CLiBMdWdhciB5IGNsaWVudGUgY29ub2NpZG8u',
+                            2,
+                            NULL,
+                            '2020-12-03 12:41:28',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1698, 266, 6, 1, 3120.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1698, 19, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1698, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1698, 'Cristaleria, loza y plaque para 22 personas', 1381,0) 
+
+

@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1082,
+                            '2020-11-13 08:00',
+                            '06:00',
+                            'UGx1dGFyY28gRWxpYXMgY2FsbGVzIDExNSBCIEdyYW5qYXMgTWV4aWNvLCBJenRhY2FsY28sIGVudHJlIEdvbWEgeSBDaGljbGU=',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2020-11-12 14:50:11',
+                            1) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1641, '10 mesas periqueras  para funda ', 1200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1641, '12 fundas blancas para mesa periquera ', 480,0) 
+
+

@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            897,
+                            '2020-02-06 17:00',
+                            '15:00',
+                            'SG90ZWwgRm91ciBTZWFzb24=',
+                            'RW50cmVnYXIgZWwgNSBGZWJyZXJvIDIyIGhycywgTGxldmFyIGNhcnJpdG8gYWNjZXNvIGxhcmdvLg==',
+                            2,
+                            NULL,
+                            '2020-01-24 08:12:58') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1146, 58, 24, 2, 4800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1146, 'Horario de entrega ', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1146, 'Acceso largo', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-06 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'SG90ZWwgRm91ciBTZWFzb24=',
+                            tObservaciones = 'RW50cmVnYXIgZWwgNSBGZWJyZXJvIDIyIGhycywgTGxldmFyIGNhcnJpdG8gYWNjZXNvIGxhcmdvLg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001146 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001146, 58, 24, 2, 4800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001146, 'Horario de entrega ', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001146, 'Acceso largo', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001146, 'Recoleccion 18 hrs ', 300,0) 
+
+

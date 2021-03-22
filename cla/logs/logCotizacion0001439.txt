@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1031,
+                            '2020-05-23 07:00',
+                            '05:00',
+                            'UmFtb3MgTWlsbGFuIDEwNSBlZGZpZi4gM0IgZGVwdG8gNjAxIENvbC4gTknDsW9zIEjDqXJvZXMsIEIuIEp1YXJleg==',
+                            'U2VydmljaW8gZW4gZGVwdG8=',
+                            2,
+                            NULL,
+                            '2020-05-21 13:37:42',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1439, 29, 10, 2, 250.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1439, 133, 1, 2, 300.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1439, 'Diferencia Manuel', 30,0) 
+
+

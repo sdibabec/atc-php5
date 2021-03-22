@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1203,
+                            '2020-12-23 07:00',
+                            '05:00',
+                            'T2Rlc2EgIyAyMjIgLSAyMDMgQ29sLiBQb3J0YWxlcywgQi4gSnVhcmV6IGVudHJlIE5lY2F4YSB5IFZpY3RvciBIdWdv',
+                            'U2Ugb2N1cGEgZWxldmFkb3IgaW5kaWNhIGNsaWVudGUu',
+                            2,
+                            NULL,
+                            '2020-12-17 17:57:29',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1752, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1752, 143, 10, 2, 150.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-24 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'T2Rlc2EgIyAyMjIgLSAyMDMgQ29sLiBQb3J0YWxlcywgQi4gSnVhcmV6IGVudHJlIE5lY2F4YSB5IFZpY3RvciBIdWdv',
+                            tObservaciones = 'U2Ugb2N1cGEgZWxldmFkb3IgaW5kaWNhIGNsaWVudGUu',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001752 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001752, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001752, 143, 10, 2, 150.00,0) 
+
+

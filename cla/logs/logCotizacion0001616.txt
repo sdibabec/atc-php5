@@ -1,0 +1,48 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            211,
+                            '2020-10-30 13:00',
+                            '11:00',
+                            'QWN1ZWR1Y3RvIExlcm1hICA2MyBTYW4gQmFydG9sb21lIENvYXRlcGVjLCBFZG8uIE1leCA=',
+                            'SmFyZGluIGRlIGV2ZW50b3MgRWwgR3JpbGxvLCBwLmIuIA==',
+                            2,
+                            NULL,
+                            '2020-10-29 17:07:24',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1616, 124, 1, 1, 950.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1616, 72, 20, 2, 1700.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1616, 74, 20, 2, 1700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1616, 'Flete ', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1616, '2 mesas lounge rojas ', 200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-30 13:00',
+                            tmHoraMontaje = '11:00',
+                            tDireccion = 'QWN1ZWR1Y3RvIExlcm1hICA2MyBTYW4gQmFydG9sb21lIENvYXRlcGVjLCBFZG8uIE1leCA=',
+                            tObservaciones = 'SmFyZGluIGRlIGV2ZW50b3MgRWwgR3JpbGxvLCBwLmIuIA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001616 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001616, 124, 1, 1, 950.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001616, 72, 20, 2, 1700.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001616, 74, 20, 2, 1700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001616, 'Flete ', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001616, '2 mesas lounge rojas ', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001616, '2 mesas lounge negra', 200,0) 
+
+

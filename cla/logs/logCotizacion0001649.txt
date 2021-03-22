@@ -1,0 +1,46 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-11-24 18:00',
+                            '16:00',
+                            'Q290aXphY2lvbiwgU3IuIEFuZHJvIEdvbnphbGV6IFZhbGVyaW8=',
+                            'TGFndW5hIGRlIHNhbiBNaWd1ZWwgQW1heWEsIEVkby4gTWV4',
+                            1,
+                            NULL,
+                            '2020-11-13 17:39:20',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1649, 149, 1, 1, 13900.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1649, 'Casetas de ida y vuelta', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1649, 'Gasolina de ida y vuelta', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-24 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'Q290aXphY2lvbiwgU3IuIEFuZHJvIEdvbnphbGV6IFZhbGVyaW8=',
+                            tObservaciones = 'TGFndW5hIGRlIHNhbiBNaWd1ZWwgQW1heWEsIEVkby4gTWV4',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001649 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001649, 149, 1, 1, 13900.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001649, 'Casetas de ida y vuelta', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001649, 'Gasolina de ida y vuelta', 1200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001649, 'Viaticos', 600,0) 
+
+

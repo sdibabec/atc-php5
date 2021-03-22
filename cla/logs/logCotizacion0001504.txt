@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1069,
+                            '2020-09-05 21:00',
+                            '19:00',
+                            'Y2FycmV0ZXJhIE1leGljby1Ub2x1Y2EgS20gNDUgIGNhc2EgQ2Vkcm9zICMgMTYxIENsdWIgZGUgR29sZiBMb3MgRW5jaW5vcywgTGVybWE=',
+                            'UC5iLg==',
+                            1,
+                            NULL,
+                            '2020-09-03 15:17:52',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1504, 2, 1, 1, 5800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1504, 11, 5, 2, 375.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1504, 'Gastos de traslado ', 976,0) 
+
+

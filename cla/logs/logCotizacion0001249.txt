@@ -1,0 +1,27 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            963,
+                            '2020-02-21 06:00',
+                            '04:00',
+                            'bGEgUGF6ICMgNzUgQ29sLiBWYWxsZSBDZXlsYW4sIFRsYWxuZXBhbnRsYSBlbnRyZSBDdWxpYWNhbiB5IE1vbnRlcnJleSA=',
+                            'VmllbmUgY2xpZW50ZSBwb3IgbGEgcmVudGEsIHBhc2Egdmllcm5lcyAxMSBhbSB5IGVsIHPDoWJhZG8gMTIgcG0gZW50cmVnYQ==',
+                            2,
+                            NULL,
+                            '2020-02-20 13:31:43') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1249, 114, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1249, 'Alfombra roja de 2.97 mts x 2.97 mts ', 400,0) 
+
+

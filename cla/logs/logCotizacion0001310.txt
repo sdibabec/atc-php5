@@ -1,0 +1,64 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            996,
+                            '2020-03-07 14:30',
+                            '12:30',
+                            'QXYuIFB1ZXJ0byBHdWF5bWFzICM5MSwgQ29sLiBKYXJkaW5lcyBkZSBDYXNhIE51ZXZhLCBFY2F0ZXBlYyBFZG8gZGUgTWV4LiANCkVudHJlIFBhcGFub2EgeSBFbnNlbmFkYS4=',
+                            'IkN1bXBsZWFub3MiDQpBY2Nlc28gZW4gcGxhbnRhIGJhamEsIGRlbnRybyBkZSBzYWxvbiBkZSBmaWVzdGFzIHNpbiBkZXNuaXZlbGVzIGEgMyBtZXRyb3MgZGUgbGEgY2FsbGUuDQo=',
+                            1,
+                            NULL,
+                            '2020-03-03 14:51:23') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1310, 21, 6, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1310, 'Operador de pista iluminada ', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-07 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'QXYuIFB1ZXJ0byBHdWF5bWFzICM5MSwgQ29sLiBKYXJkaW5lcyBkZSBDYXNhIE51ZXZhLCBFY2F0ZXBlYyBFZG8gZGUgTWV4LiANCkVudHJlIFBhcGFub2EgeSBFbnNlbmFkYS4=',
+                            tObservaciones = 'IkN1bXBsZWFub3MiDQpBY2Nlc28gZW4gcGxhbnRhIGJhamEsIGRlbnRybyBkZSBzYWxvbiBkZSBmaWVzdGFzIHNpbiBkZXNuaXZlbGVzIGEgMyBtZXRyb3MgZGUgbGEgY2FsbGUuDQo=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001310 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001310, 21, 6, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001310, 'Operador de pista iluminada ', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-07 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'QXYuIFB1ZXJ0byBHdWF5bWFzICM5MSwgQ29sLiBKYXJkaW5lcyBkZSBDYXNhIE51ZXZhLCBFY2F0ZXBlYyBFZG8gZGUgTWV4LiANCkVudHJlIFBhcGFub2EgeSBFbnNlbmFkYS4=',
+                            tObservaciones = 'IkN1bXBsZWFub3MiDQpBY2Nlc28gZW4gcGxhbnRhIGJhamEsIGRlbnRybyBkZSBzYWxvbiBkZSBmaWVzdGFzIHNpbiBkZXNuaXZlbGVzIGEgMyBtZXRyb3MgZGUgbGEgY2FsbGUuDQo=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001310 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001310, 21, 6, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001310, 'Operador de pista iluminada ', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-07 19:00',
+                            tmHoraMontaje = '17:00',
+                            tDireccion = 'QXYuIFB1ZXJ0byBHdWF5bWFzICM5MSwgQ29sLiBKYXJkaW5lcyBkZSBDYXNhIE51ZXZhLCBFY2F0ZXBlYyBFZG8gZGUgTWV4LiANCkVudHJlIFBhcGFub2EgeSBFbnNlbmFkYS4=',
+                            tObservaciones = 'IkN1bXBsZWFub3MiDQpBY2Nlc28gZW4gcGxhbnRhIGJhamEsIGRlbnRybyBkZSBzYWxvbiBkZSBmaWVzdGFzIHNpbiBkZXNuaXZlbGVzIGEgMyBtZXRyb3MgZGUgbGEgY2FsbGUuDQo=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001310 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001310, 21, 6, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001310, 'Operador de pista iluminada ', 500,0) 
+
+

@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            16,
+							2,
+                            1009,
+                            '2020-03-11 01:00',
+                            '23:00',
+                            'QmVsaXNhcmlvIERvbWluZ3VlcyAjMjIsIENvbC4gQ2VudHJv',
+                            'aW5kaWNhIGNsaWVudGUgcXVlIGVzIGVuIFBsYW50YSBiYWphIHkgdGllbmUgZXN0YWNpb25hbWllbnRv',
+                            2,
+                            NULL,
+                            '2020-03-09 13:51:05',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1329, 58, 6, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1329, 'Flete', 300,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-11 01:00',
+                            tmHoraMontaje = '23:00',
+                            tDireccion = 'QmVsaXNhcmlvIERvbWluZ3VlcyAjMjIsIENvbC4gQ2VudHJv',
+                            tObservaciones = 'aW5kaWNhIGNsaWVudGUgcXVlIGVzIGVuIFBsYW50YSBiYWphIHkgdGllbmUgZXN0YWNpb25hbWllbnRv',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001329 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001329, 58, 6, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001329, 'Flete', 500,0) 
+
+

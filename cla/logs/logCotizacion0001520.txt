@@ -1,0 +1,39 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-10-29 09:00',
+                            '07:00',
+                            'UmljYXJkbyBNb250aWVsLCBjb3RpemFjaW9u',
+                            'WA==',
+                            2,
+                            NULL,
+                            '2020-09-15 18:05:25',
+                            NULL) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1520, '50 Silla plegable   por 2 días ', 1500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-29 09:00',
+                            tmHoraMontaje = '07:00',
+                            tDireccion = 'UmljYXJkbyBNb250aWVsLCBjb3RpemFjaW9u',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001520 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001520, '50 Silla plegable   por 2 días ', 1500,0) 
+
+

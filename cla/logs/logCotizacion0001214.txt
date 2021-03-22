@@ -1,0 +1,58 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-05-01 07:30',
+                            '05:30',
+                            'QW5kcmVhIFJvZHJpZ3VleiA=',
+                            'Q290aXphY2lvbg==',
+                            1,
+                            NULL,
+                            '2020-02-11 15:34:32') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1214, 255, 1, 1, 6600.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-05-01 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'QW5kcmVhIFJvZHJpZ3VleiA=',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001214 
+
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-05-01 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'QW5kcmVhIFJvZHJpZ3VleiA=',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001214 
+
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-05-01 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'QW5kcmVhIFJvZHJpZ3VleiA=',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001214 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001214, 116, 1, 1, 6600.00,0) 
+
+

@@ -1,0 +1,27 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1269,
+                            '2021-03-27 13:00',
+                            '11:00',
+                            'TGVpYm5pdHogMTQwIC0gZGVwdG8gMyBDb2wuIEFuenVyZXMsIE0uIEhpZGFsZ28gMTE1OTAgZW50cmUgQ29wZXJuaWNvIHkgRGFyd2lu',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2021-03-16 16:59:49',
+                            NULL) 
+
+

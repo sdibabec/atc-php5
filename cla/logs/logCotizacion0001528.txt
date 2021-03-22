@@ -1,0 +1,32 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1081,
+                            '2020-09-25 12:00',
+                            '10:00',
+                            'Q2RhLiBWaXN0YSBkZSBsYSBUb3JyZSAxIGRlcHRvIDIwMiwgR3JlZW4gSGF1c2UsIFZpc3RhIEhvcml6b250ZSwgSHVpeHF1aWx1Y2FuIEVkby4gTWV4aWNv',
+                            'Q2xpZW50ZSBwb3IgMmRhIG9jYXNpb24=',
+                            2,
+                            NULL,
+                            '2020-09-23 14:19:26',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1528, 49, 2, 2, 1000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1528, 48, 2, 2, 800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1528, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1528, 'Flete', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1528, 'Descuento Manuel total Renta $1,900.00', 0.00,0) 
+
+

@@ -1,0 +1,40 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            966,
+                            '2020-02-29 05:00',
+                            '03:00',
+                            'QXYuIFJldm9sdWNpw7NuIDEwNjIgZGVwdG8gNzA0LCAgQ29sLiBTYW4gSm9zZSBJbnN1cmdlbnRlcywgZW50cmUgTWF0ZW8gSGVycmVyYSB5IFJvZHJpZ28gQ2lmdWVudGVzLCBCZW5pdG8gSnXDoXJleiAwMzkwMC4=',
+                            'Q2l0YSBrYXJlbiAgZWwgbWFydGVzIDI1IEZlYiAyMCAgMTg6MzA=',
+                            1,
+                            NULL,
+                            '2020-02-20 16:33:37') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1253, 6, 1, 1, 6375.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1253, 'Acceso 8 pisos ', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-29 05:00',
+                            tmHoraMontaje = '03:00',
+                            tDireccion = 'QXYuIFJldm9sdWNpw7NuIDEwNjIgZGVwdG8gNzA0LCAgQ29sLiBTYW4gSm9zZSBJbnN1cmdlbnRlcywgZW50cmUgTWF0ZW8gSGVycmVyYSB5IFJvZHJpZ28gQ2lmdWVudGVzLCBCZW5pdG8gSnXDoXJleiAwMzkwMC4=',
+                            tObservaciones = 'Q2l0YSBrYXJlbiAgZWwgbWFydGVzIDI1IEZlYiAyMCAgMTg6MzA=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001253 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001253, 6, 1, 1, 6375.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001253, 'Acceso 8 pisos ', 1200,0) 
+
+

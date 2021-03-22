@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1254,
+                            '2021-02-20 19:00',
+                            '17:00',
+                            'QWxlamFuZHJvIEFsbG9yaSAjIDMzIENvbC4gQWxmb25zbyBYSUkgIGVzcXVpbmEgVGl6aWFubywgQS4gT2JyZWdvbg==',
+                            'Q2FzYSBQLkIuIHNvbiBwcm9ibGVtYSBkZSBhY2Nlc28=',
+                            2,
+                            NULL,
+                            '2021-02-18 13:05:29',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1822, 173, 6, 1, 1770.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1822, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1822, 'Barra Iluminada ', 350,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1822, '7 pantallas con veladora', 70,0) 
+
+

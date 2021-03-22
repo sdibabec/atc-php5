@@ -1,0 +1,150 @@
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"7","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"2"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 2,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000016","eAccion":"","bAll":"1","eCodEstatus":"7","tCorreo":"ernesto@antroentucasa.com.mx","tPasswordAcceso":"Sunlite2017","tPasswordOperaciones":"Sunlite2017","tNombre":"Ernesto","tApellidos":"Hernandez","eCodPerfil":"2"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'U3VubGl0ZTIwMTc=',
+            tPasswordOperaciones = 'U3VubGl0ZTIwMTc=',
+            eCodPerfil = 2,
+            bAll = 1
+            WHERE
+            eCodUsuario = 0000016
+
+{"eCodUsuario":"0000016","eAccion":"","eCodEstatus":"3","tCorreo":"ernesto@antroentucasa.com.mx","tPasswordAcceso":"Sunlite2017","tPasswordOperaciones":"Sunlite2017","tNombre":"Ernesto","tApellidos":"Hernandez","eCodPerfil":"2"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'U3VubGl0ZTIwMTc=',
+            tPasswordOperaciones = 'U3VubGl0ZTIwMTc=',
+            eCodPerfil = 2,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000016
+
+{"eCodUsuario":"0000016","eAccion":"","eCodEstatus":"3","tCorreo":"ernesto@antroentucasa.com.mx","tPasswordAcceso":"Sunlite2017","tPasswordOperaciones":"Sunlite2017","tNombre":"Ernesto","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'U3VubGl0ZTIwMTc=',
+            tPasswordOperaciones = 'U3VubGl0ZTIwMTc=',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000016
+
+{"eCodUsuario":"0000019","eAccion":"","eCodEstatus":"3","tCorreo":"melissa@antroentucasa.com.mx","tPasswordAcceso":"Vintage1980","tPasswordOperaciones":"Vintage1980","tNombre":"Melissa","tApellidos":"AETC","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'VmludGFnZTE5ODA=',
+            tPasswordOperaciones = 'VmludGFnZTE5ODA=',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000019
+
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"3","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000007","eAccion":"","bAll":"1","eCodEstatus":"7","tCorreo":"veronica_jp@antroentucasa.com.mx","tPasswordAcceso":"Vintage33","tPasswordOperaciones":"Vintage33","tNombre":"Veronica ","tApellidos":"Jasso","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'VmludGFnZTMz',
+            tPasswordOperaciones = 'VmludGFnZTMz',
+            eCodPerfil = 5,
+            bAll = 1
+            WHERE
+            eCodUsuario = 0000007
+
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"7","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000016","eAccion":"","eCodEstatus":"7","tCorreo":"ernesto@antroentucasa.com.mx","tPasswordAcceso":"Sunlite2017","tPasswordOperaciones":"Sunlite2017","tNombre":"Ernesto","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'U3VubGl0ZTIwMTc=',
+            tPasswordOperaciones = 'U3VubGl0ZTIwMTc=',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000016
+
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"7","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"7","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000021","eAccion":"","eCodEstatus":"7","tCorreo":"maribel@antroentucasa.com.mx","tPasswordAcceso":"Qsc1980","tPasswordOperaciones":"Qsc1980","tNombre":"Maribel","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'UXNjMTk4MA==',
+            tPasswordOperaciones = 'UXNjMTk4MA==',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000021
+
+{"eCodUsuario":"0000019","eAccion":"","eCodEstatus":"7","tCorreo":"melissa@antroentucasa.com.mx","tPasswordAcceso":"Vintage1980","tPasswordOperaciones":"Vintage1980","tNombre":"Melissa","tApellidos":"AETC","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'VmludGFnZTE5ODA=',
+            tPasswordOperaciones = 'VmludGFnZTE5ODA=',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000019
+
+{"eCodUsuario":"0000016","eAccion":"","eCodEstatus":"7","tCorreo":"ernesto@antroentucasa.com.mx","tPasswordAcceso":"Sunlite2017","tPasswordOperaciones":"Sunlite2017","tNombre":"Ernesto","tApellidos":"Hernandez","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'U3VubGl0ZTIwMTc=',
+            tPasswordOperaciones = 'U3VubGl0ZTIwMTc=',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000016
+
+{"eCodUsuario":"0000023","eAccion":"","eCodEstatus":"7","tCorreo":"monaco@antroentucasa.com.mx","tPasswordAcceso":"Monaco213","tPasswordOperaciones":"Monaco213","tNombre":"Monaco","tApellidos":"213","eCodPerfil":"5"}
+
+UPDATE SisUsuarios SET
+            tPasswordAcceso = 'TW9uYWNvMjEz',
+            tPasswordOperaciones = 'TW9uYWNvMjEz',
+            eCodPerfil = 5,
+            bAll = 0
+            WHERE
+            eCodUsuario = 0000023
+

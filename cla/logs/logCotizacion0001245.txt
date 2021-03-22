@@ -1,0 +1,44 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            15,
+                            '2020-06-20 20:00',
+                            '18:00',
+                            'WA==',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-02-20 11:26:00') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1245, 254, 1, 1, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1245, 102, 12, 2, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1245, 253, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1245, 'Láser de cortesia', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-06-20 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'WA==',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001245 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001245, 254, 1, 1, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001245, 102, 12, 2, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001245, 253, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001245, 'Laser de cortesia', 0,0) 
+
+

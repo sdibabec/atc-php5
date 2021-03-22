@@ -1,0 +1,28 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1035,
+                            '2020-06-28 07:00',
+                            '05:00',
+                            'TWlndWVsIEhpZGFsZ28gIyAgMzkgaW50LiAyNSBTYW4gRnJhbmNpc2NvIEN1bGh1YWNhbiwgQ295b2FjYW4uIGNwLjA0MjYwDQpFbnRyZSBUYXhxdWXDsWEgeSBTYW4gRnJhbmNpc2NvLg0KU3ViaXIgdW4gcGlzbw==',
+                            'U2UgZW50cmVnYSByZW50YSBlbCBzw6FiYWRvLg==',
+                            2,
+                            NULL,
+                            '2020-06-24 15:42:51',
+                            1) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1450, '7 Sillones hueso chocolate', 1400,0) 
+
+

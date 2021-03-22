@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            16,
+							1,
+                            1030,
+                            '2020-04-04 12:00',
+                            '10:00',
+                            'UGlyYW1pZGUgZGUgZnVlZ28gZXNjYWxvbiA3LCBDb2wuIENlcnJvIGRlIGxhIEVzdHJlbGxhLiBJenRhcGFsYXBh',
+                            'JUF6dGVjYXMgeSBNaXh0ZWNheg==',
+                            1,
+                            1,
+                            '2020-03-31 14:30:13',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1424, 36, 1, 1, 9600.00,0,2) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1424, 'Mesero', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-04-04 12:00',
+                            tmHoraMontaje = '10:00',
+                            tDireccion = 'UGlyYW1pZGUgZGUgZnVlZ28gZXNjYWxvbiA3LCBDb2wuIENlcnJvIGRlIGxhIEVzdHJlbGxhLiBJenRhcGFsYXBh',
+                            tObservaciones = 'JUF6dGVjYXMgeSBNaXh0ZWNheg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001424 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001424, 374, 1, 1, 4800.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001424, 'Mesero', 500,0) 
+
+

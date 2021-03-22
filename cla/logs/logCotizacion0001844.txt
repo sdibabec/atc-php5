@@ -1,0 +1,53 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2021-04-01 11:00',
+                            '09:00',
+                            'Q290aXphY2lvbiwgIFNyaXRhLiBEYW5pZWxhIENhcnBpbnRlaXJv',
+                            'UHVlYmxhLg==',
+                            2,
+                            NULL,
+                            '2021-03-11 16:10:05',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1844, 161, 2, 1, 3600.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-04-01 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'Q290aXphY2lvbiwgIFNyaXRhLiBEYW5pZWxhIENhcnBpbnRlaXJv',
+                            tObservaciones = 'UHVlYmxhLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001844 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001844, 161, 2, 1, 3600.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001844, 'Costo de casetas por  2 viajes redondos', 1440,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-04-01 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'Q290aXphY2lvbiwgIFNyaXRhLiBEYW5pZWxhIENhcnBpbnRlaXJv',
+                            tObservaciones = 'UHVlYmxhLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001844 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001844, 161, 2, 1, 3600.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001844, 'Costo de casetas por  2 viajes redondos', 1440,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001844, 'Gasolina de ida y vuelta (2 viajes redondos)', 3780,0) 
+
+

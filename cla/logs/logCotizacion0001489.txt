@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-08-29 20:00',
+                            '18:00',
+                            'Q290aXphY2lvbiAgQWJyYWhhbSBDYW1wYW5hIDE1IG1vZHVsb3MgZGUgcGlzdGE=',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-08-25 11:20:09',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1489, 21, 15, 2, 6750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1489, 'Maquina de humo ', 450,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-08-29 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'Q290aXphY2lvbiAgQWJyYWhhbSBDYW1wYW5hIDEwIG1vZHVsb3MgZGUgcGlzdGE=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001489 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001489, 21, 10, 2, 4500.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001489, 'Maquina de humo ', 450,0) 
+
+

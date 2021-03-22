@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1065,
+                            '2020-09-05 07:00',
+                            '05:00',
+                            'QXYuIENhcmxvcyBIYW5rIEdvbnphbGV6IDEzNSBDb2wuIHZhbGxlIGRlIGFyYWdvbiAzcmEgc2VjYy4gRWNhdGVwZWMsIEVkby4gTWV4IGVudHJlIHZhbGxlIGRlIElndWFsYSB5IFZhbGxlIEphbWFwYSBwb3IgZWwgbWV0cm8gTXV6cXVpeiAu',
+                            'SW5kaWNhIGNsaWVudGUgUC5CLiANClNlIGxlIGhpem8gZGVzY3VlbnRvIDEwJSAgYXV0b3JpemFkbyBwb3IgTWFudWVsIE1vcmFsZXM=',
+                            2,
+                            NULL,
+                            '2020-09-01 14:48:30',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1499, 120, 1, 1, 1000.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1499, 266, 2, 1, 1040.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1499, 'menos 10%  $ 204.00 autorizo Manuel', 0.00,0) 
+
+

@@ -1,0 +1,28 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            1000,
+                            '2020-03-06 10:00',
+                            '08:00',
+                            'QVYuIFBPUE9DQVRFUEVUTCAjNDc0LCBDT0xPTklBIFhPQ08uIEJFTklUTyBKVUFSRVogDQpFTlRSRSBTQU4gRkVMSVBFIFkgQVYuIENVQVVIVEVNT0M=',
+                            'RU5UUkFSIEEgTEEgQkFISUEgU09CUkUgQVYgUE9QT0NBVEVQRVRMLiBFTCBTQUxPTiBGUklEQSBFU1RBIEVOIFBMQU5UQSBCQUpBIEEgVU4gQ09TVEFETyBERSBMQSBSRUNFUENJT04uIExPUyBHVUFSRElBUyBERSBTRUdVUklEQUQgWUEgQ09OVEFSQU4gQ09OIExBIElORk9STUFDSU9OIFBSRVZJTyBBIFNVIExMRUdBREEgUEFSQSBPUklFTlRBUkxPUw==',
+                            2,
+                            NULL,
+                            '2020-03-04 13:46:42') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1315, 45, 6, 2, 720.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1315, 47, 15, 2, 525.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1315, 'minimo renta ', 255,0) 
+
+

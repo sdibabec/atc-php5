@@ -1,0 +1,44 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            606,
+                            '2020-11-14 20:00',
+                            '18:00',
+                            'QXYuIFByb2xvbmdhY2lvbiBTYW4gUGFibG8gIyAyOCBDb2wuIFNhbiBCZXJuYWJlIE9jb3RlcGVjLCBNYWdhZGFsZW5hIENvbnRyZXJhcw==',
+                            'THVnYXIgeSBjbGllbnRlIGNvbm9jaWRv',
+                            1,
+                            NULL,
+                            '2020-10-31 15:16:51',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1623, 286, 1, 1, 7300.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1623, 21, 6, 2, 2700.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-14 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'QXYuIFByb2xvbmdhY2lvbiBTYW4gUGFibG8gIyAyOCBDb2wuIFNhbiBCZXJuYWJlIE9jb3RlcGVjLCBNYWdhZGFsZW5hIENvbnRyZXJhcw==',
+                            tObservaciones = 'THVnYXIgeSBjbGllbnRlIGNvbm9jaWRv',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001623 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001623, 286, 1, 1, 7300.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001623, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001623, '1 Mesero', 300,0) 
+
+

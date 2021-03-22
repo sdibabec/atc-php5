@@ -1,0 +1,33 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1028,
+                            '2020-03-21 20:00',
+                            '18:00',
+                            'QmFsYm9hICMgNDEyIGludCA0IENvbC4gUG9ydGFsZXMgZW50cmUgUHJlc2lkZW50ZXMgeSBNLiBMaWJyZQ==',
+                            'Q2xpZW50ZSBkZSB1bHRpbW8gbW9tZW50bw==',
+                            1,
+                            NULL,
+                            '2020-03-21 18:19:40',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1410, 181, 4, 1, 900.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1410, 148, 4, 2, 80.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1410, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1410, 84, 20, 2, 140.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1410, 'Barra iluminada', 700,0) 
+
+

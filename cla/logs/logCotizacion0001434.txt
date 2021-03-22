@@ -1,0 +1,58 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            776,
+                            '2020-10-10 19:00',
+                            '17:00',
+                            'SGFjaWVuZGEgbG9zIFR1bGlwYW5lcywgQ29uZG9taW5pbyAyMTYsIFByaXZhZGEgTWF0YXJydWJpYSwgY2FzYSAzMTIsIENvbC4gSGFjaWVuZGEgQ3VhdXRpdGxhbiwgTXBvLiBDdWF1dGl0bGFuIGRlIFJvbWVybyBSdWJpbywgRXN0YWRvIGRlIE1leGljbywgIEMuUC4gNTQ4MDM=',
+                            'SW5kaWNhIGNsaWVudGUgUC5iLiAgc2luIHByb2JsZW1hIGRlIGFjY2Vzby4gUmFt',
+                            1,
+                            NULL,
+                            '2020-04-15 13:12:11',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1434, 21, 9, 2, 4050.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1434, 'Cargo por distancia', 800,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-10 19:00',
+                            tmHoraMontaje = '17:00',
+                            tDireccion = 'SGFjaWVuZGEgbG9zIFR1bGlwYW5lcywgQ29uZG9taW5pbyAyMTYsIFByaXZhZGEgTWF0YXJydWJpYSwgY2FzYSAzMTIsIENvbC4gSGFjaWVuZGEgQ3VhdXRpdGxhbiwgTXBvLiBDdWF1dGl0bGFuIGRlIFJvbWVybyBSdWJpbywgRXN0YWRvIGRlIE1leGljbywgIEMuUC4gNTQ4MDM=',
+                            tObservaciones = 'SW5kaWNhIGNsaWVudGUgUC5iLiAgc2luIHByb2JsZW1hIGRlIGFjY2Vzby4gUmFt',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001434 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001434, 21, 9, 2, 4050.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001434, 'Cargo por distancia', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001434, 'Operador', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-10-09 19:00',
+                            tmHoraMontaje = '17:00',
+                            tDireccion = 'SGFjaWVuZGEgbG9zIFR1bGlwYW5lcywgQ29uZG9taW5pbyAyMTYsIFByaXZhZGEgTWF0YXJydWJpYSwgY2FzYSAzMTIsIENvbC4gSGFjaWVuZGEgQ3VhdXRpdGxhbiwgTXBvLiBDdWF1dGl0bGFuIGRlIFJvbWVybyBSdWJpbywgRXN0YWRvIGRlIE1leGljbywgIEMuUC4gNTQ4MDM=',
+                            tObservaciones = 'SW5kaWNhIGNsaWVudGUgUC5iLiAgc2luIHByb2JsZW1hIGRlIGFjY2Vzby4gUmFt',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001434 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001434, 21, 9, 2, 4050.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001434, 'Cargo por distancia', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001434, 'Operador', 0,0) 
+
+

@@ -1,0 +1,24 @@
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-02 06:00',
+                            tmHoraMontaje = '04:00',
+                            tDireccion = 'QXYuIEN1bWJyZXMgZGUgTWFsdHJhdGEgMzYwIENvbC4gTmFydmFydGUsIEIuIEp1YXJleg==',
+                            tObservaciones = 'RXMgdW4gcmVzdGF1cmFudCwgZWwgY29udGFjdG8gZXMgRXVuaWNlIFJvbWVybyAgNTUgNjMgODkgMTEgMjkgIGV4dCA3MDIgeSAgNzAzIA0KTW92aWwgZGUgRXVuaWNlIFJvbWVybyAgNTUgODUgMzEgNDggNDQu',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001082 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001082, 163, 10, 1, 2650.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001082, 'Entrega Domingo', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001082, 'Recoleccion Domingo 22:30', 300,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-02 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'QXYuIEN1bWJyZXMgZGUgTWFsdHJhdGEgMzYwIENvbC4gTmFydmFydGUsIEIuIEp1YXJleg==',
+                            tObservaciones = 'RXMgdW4gcmVzdGF1cmFudCwgZWwgY29udGFjdG8gZXMgRXVuaWNlIFJvbWVybyAgNTUgNjMgODkgMTEgMjkgIGV4dCA3MDIgeSAgNzAzIA0KTW92aWwgZGUgRXVuaWNlIFJvbWVybyAgNTUgODUgMzEgNDggNDQu',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001082 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001082, 163, 10, 1, 2650.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001082, 'Entrega Domingo', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001082, 'Recoleccion Domingo 22:30', 300,0) 
+
+

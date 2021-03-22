@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1021,
+                            '2020-05-30 01:00',
+                            '23:00',
+                            'SGFjaWVuZGEgU2FuIE1pZ3VlbCBSZWdsYQ==',
+                            'MjIwIHggNCA9IDg4MC4wMCAoY2FzZXRhcykNCjEzOGttIHggMTU9JDIsMDcwLjAwIHggMiA9ICQ0LDE0MC4wMA==',
+                            1,
+                            NULL,
+                            '2020-03-12 23:46:24',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1368, 103, 10, 1, 15000.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1368, 'Casetas', 880,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1368, 'Gasolina', 4140,0) 
+
+

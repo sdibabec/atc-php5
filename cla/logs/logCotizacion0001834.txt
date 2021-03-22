@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1261,
+                            '2021-03-06 20:00',
+                            '18:00',
+                            'RXN0ZXJsaW5hcyAjIDYgQW1wbC4gU2ltw7NuIEJvbGl2YXIsIEdBTSBlc3F1aW5hIENhcmxvcyBNYXJ4IHkgbGEgQ2RhLiBkZSBsYSB0aWVuZGEgU29yaWFuYQ==',
+                            'UC5CLiBldmVudG8gZW4gZ2FyYWdlLCBsdWdhciB5IGNsaWVudGUgY29ub2NpZG8u',
+                            1,
+                            NULL,
+                            '2021-03-02 18:05:38',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1834, 73, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1834, 102, 6, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1834, 'Se le descontaron $400.00 de la pista', 0.00,0) 
+
+

@@ -1,0 +1,45 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1116,
+                            '2020-10-31 09:00',
+                            '07:00',
+                            'VGViYXMgMjIzIENvbC4gRWwgUmVjcmVvLCBBemNhcG90emFsY28gZW50cmUgQXF1aWxlcyBFbG9yZHV5IHkgU2FuIEx1Y2FzLg==',
+                            'UC5CLiBpbmRpY2EgY2xpZW50ZS4=',
+                            2,
+                            NULL,
+                            '2020-10-26 19:58:26',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1604, 140, 1, 1, 525.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1604, 124, 1, 1, 950.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1604, 'Entrega  9 am', 100,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-31 09:00',
+                            tmHoraMontaje = '07:00',
+                            tDireccion = 'VGViYXMgMjIzIENvbC4gRWwgUmVjcmVvLCBBemNhcG90emFsY28gZW50cmUgQXF1aWxlcyBFbG9yZHV5IHkgU2FuIEx1Y2FzLg==',
+                            tObservaciones = 'UC5CLiBpbmRpY2EgY2xpZW50ZS4=',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001604 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001604, 140, 1, 1, 525.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001604, 124, 1, 1, 950.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001604, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001604, 'Entrega  9 am', 100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001604, 'Parrilla roja', 300,0) 
+
+

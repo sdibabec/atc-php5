@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1138,
+                            '2020-11-13 16:00',
+                            '14:00',
+                            'VG9ycmVzIEFkYWxpZCAyMSBwaXNvIDIgQ29sLiBEZWwgVmFsbGUsIGVzcXVpbmEgTWFnZGFsZW5hIEIuIEp1YXJleg==',
+                            'U2Ugb2N1cGEgZWxldmFkb3I=',
+                            2,
+                            NULL,
+                            '2020-11-12 15:08:32',
+                            1) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1642, '2 tablones con mantel negro', 280,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1642, '5 tablones medianos con mantel negro ', 600,0) 
+
+

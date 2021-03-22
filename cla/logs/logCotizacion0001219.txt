@@ -1,0 +1,46 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            944,
+                            '2020-02-22 11:00',
+                            '09:00',
+                            'VmljZW50ZSBMb21iYXJkbyBUb2xlZGFubyAjOCwgQ29sLiBFeCBIYWNpZW5kYSBHdWFkYWx1cGUgQ2hpbWFsaXN0YWMsIEFsdmFybyBPYnJlZ29uIA0KQSBlc3BhbGRhcyBkZSBCQlZBLCBGcmVudGUgYSBQbGF6YSBJbm4=',
+                            'UEI=',
+                            2,
+                            NULL,
+                            '2020-02-12 17:14:24') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1219, 159, 7, 1, 2800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1219, 266, 7, 1, 3640.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1219, 49, 4, 2, 2000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1219, 48, 4, 2, 1600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1219, 51, 4, 2, 800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1219, '4 sillones modulares clasicos dobles Vintage ', 1400,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-22 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'VmljZW50ZSBMb21iYXJkbyBUb2xlZGFubyAjOCwgQ29sLiBFeCBIYWNpZW5kYSBHdWFkYWx1cGUgQ2hpbWFsaXN0YWMsIEFsdmFybyBPYnJlZ29uIA0KQSBlc3BhbGRhcyBkZSBCQlZBLCBGcmVudGUgYSBQbGF6YSBJbm4=',
+                            tObservaciones = 'UEI=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001219 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001219, 159, 8, 1, 3200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001219, 266, 6, 1, 3120.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001219, 49, 4, 2, 2000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001219, 48, 4, 2, 1600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001219, 51, 4, 2, 800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001219, '4 sillones modulares clasicos dobles Vintage ', 1400,0) 
+
+

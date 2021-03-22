@@ -1,0 +1,35 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1248,
+                            '2021-02-14 09:00',
+                            '07:00',
+                            'Q3VhdXRsYSAjIDE1NSBDb2wuIENvbmRlc2EsIEN1YXVodGVtb2MuICBlbnRyZSBDYW1wZWNoZSB5IEFsZm9uc28gUmV5ZXM=',
+                            'UC5CLiBpbmRpY2EgY2xpZW50ZSBzaW4gcHJvYmxlbWEgZGUgYWNjZXNv',
+                            2,
+                            NULL,
+                            '2021-02-11 13:44:50',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 21, 4, 2, 1800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 333, 1, 2, 1000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 11, 6, 2, 450.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 61, 4, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 60, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1814, 6, 4, 2, 1000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1814, 'Bafle activo con entrada para USB y bluetooh', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1814, 'Montaje domingo por la mañana', 400,0) 
+
+

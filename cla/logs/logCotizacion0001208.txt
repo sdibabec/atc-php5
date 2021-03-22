@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            935,
+                            '2020-02-15 10:00',
+                            '08:00',
+                            'SGVyaWJlcnRvIEZyaWFzICM1MzAsIENvbC4gTmFydmFydGUgUG9uaWVudGUuIEJlbml0byBKdWFyZXogDQpFbnRyZSBTYW4gQW50b25pbyB5IEx1eiBBdmlub24g',
+                            'Q2l0YSBNYXJ0ZXMgMTEgZGUgRmVicmVybyAxMDowMCBhbSA=',
+                            1,
+                            NULL,
+                            '2020-02-10 17:50:43') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1208, 2, 1, 1, 5800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1208, 324, 1, 2, 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1208, 'Cambio programador por VIDEOJOCKEY', 1500,0) 
+
+

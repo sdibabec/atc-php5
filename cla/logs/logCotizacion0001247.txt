@@ -1,0 +1,50 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            962,
+                            '2020-02-29 17:00',
+                            '15:00',
+                            'U2FuIEZlbGlwZSAjODUgQ29sLiBYb2NvLiBCZW5pdG8gSnVhcmV6IA0KQ2FzaSBlc3F1aW5hIGNvbiBFamUgOCBTdXIgUG9wb2NhdGVwZXRs',
+                            'U2Fsb24gZGUgZXZlbnRvcyBkZSB1biBjb25kb21pbmlvIHViaWNhZG8gZW4gUEINCkN1bXBsZSBTZWJhc3RpYW4gKDE0IGHDsW9zKSANClRpcG8gZGUgbXVzaWNhOiBtb2Rlcm5hIEluZ2xlcywgZXNwYcOxb2wsIHJvY2sgeSByZWdnYWV0b24=',
+                            1,
+                            NULL,
+                            '2020-02-20 12:56:42') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1247, 105, 1, 1, 3600.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-29 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'U2FuIEZlbGlwZSAjODUgQ29sLiBYb2NvLiBCZW5pdG8gSnVhcmV6IA0KQ2FzaSBlc3F1aW5hIGNvbiBFamUgOCBTdXIgUG9wb2NhdGVwZXRs',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcyBkZSB1biBjb25kb21pbmlvIHViaWNhZG8gZW4gUEINCkN1bXBsZSBTZWJhc3RpYW4gKDE0IGHDsW9zKSANClRpcG8gZGUgbXVzaWNhOiBtb2Rlcm5hIEluZ2xlcywgZXNwYcOxb2wsIHJvY2sgeSByZWdnYWV0b24=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001247 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001247, 338, 1, 1, 4200.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-29 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'U2FuIEZlbGlwZSAjODUgQ29sLiBYb2NvLiBCZW5pdG8gSnVhcmV6IA0KQ2FzaSBlc3F1aW5hIGNvbiBFamUgOCBTdXIgUG9wb2NhdGVwZXRs',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcyBkZSB1biBjb25kb21pbmlvIHViaWNhZG8gZW4gUEINCkN1bXBsZSBTZWJhc3RpYW4gKDE0IGHDsW9zKSANClRpcG8gZGUgbXVzaWNhOiBtb2Rlcm5hIEluZ2xlcywgZXNwYcOxb2wsIHJvY2sgeSByZWdnYWV0b24=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001247 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001247, 338, 1, 1, 4200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001247, 160, 7, 1, 1855.00,0) 
+
+

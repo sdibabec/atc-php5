@@ -1,0 +1,79 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1037,
+                            '2020-07-04 15:00',
+                            '13:00',
+                            'Q2Vycm8gZGUgbGEgbWFubyBOby4gMjUgQ29sLiBSb21lcm8gZGUgVGVycmVyb3MsIENveW9hY2FuIENETVgNClAuIGJhamE=',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-07-01 10:43:36',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1453, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1453, 19, 1, 2, 800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1453, 52, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1453, 53, 8, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1453, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1453, ' 2 Modular grande individual vintage', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1453, '1 taburete  puff 50x50 vintage ', 100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1453, 'Pantalla 40" con base de herreria ', 1500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-04 15:00',
+                            tmHoraMontaje = '13:00',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyBOby4gMjUgQ29sLiBSb21lcm8gZGUgVGVycmVyb3MsIENveW9hY2FuIENETVgNClAuIGJhamE=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001453 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 19, 1, 2, 800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 52, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 53, 8, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, ' 2 Modular grande individual vintage', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '1 taburete  puff 50x50 vintage ', 100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, 'Pantalla 40', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '2 Microfonos', 690,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '4 ceniceros cortesia', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-04 15:00',
+                            tmHoraMontaje = '13:00',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyBOby4gMjUgQ29sLiBSb21lcm8gZGUgVGVycmVyb3MsIENveW9hY2FuIENETVgNClAuIGJhamE=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001453 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 53, 8, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 52, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 19, 1, 2, 800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001453, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '1 taburete  puff 50x50 vintage ', 100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, ' 2 Modular grande individual vintage', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, 'Pantalla 40', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '2 Microfonos', 690,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, '4 ceniceros cortesia', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001453, 'Ya incluye 10% desc. por Manuel ', 0.00,0) 
+
+

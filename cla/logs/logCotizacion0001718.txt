@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1178,
+                            '2020-12-18 12:00',
+                            '10:00',
+                            'SW5kaWFuYXBvbGlzIDE2IC0gNDAxIENvbC4gTmFwb2xlcywgQi4gSnVhcmV6IGVudHJlIEFyaXpvbmEgeSBDaGljYWdv',
+                            'UG9yIGVsZXZhZG9yIGEgNHRvIHBpc28=',
+                            2,
+                            NULL,
+                            '2020-12-08 13:35:05',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1718, 124, 1, 1, 950.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1718, 194, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1718, 'Diferencia del calentador', 50,0) 
+
+

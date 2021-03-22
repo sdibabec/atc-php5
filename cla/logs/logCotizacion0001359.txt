@@ -1,0 +1,32 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            19,
+							1,
+                            1015,
+                            '2020-03-15 11:00',
+                            '09:00',
+                            'Q29udmVudG8gZGUgQmV0bGVtaXRhcyAyQSBDYXNhIEE1IENvbC4gRXggSGFjaWVuZGEgU2FudGEgTW9uaWNhLiBUbGFsbmVwYW50bGEgZGUgQmF6DQo=',
+                            'UEI=',
+                            1,
+                            NULL,
+                            '2020-03-11 14:43:57',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1359, 28, 4, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1359, 148, 4, 2, 80.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1359, 29, 44, 2, 1100.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1359, 'Distancia ', 300,0) 
+
+

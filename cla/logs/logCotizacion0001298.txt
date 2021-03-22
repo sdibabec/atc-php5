@@ -1,0 +1,64 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            103,
+                            '2020-03-12 17:00',
+                            '15:00',
+                            'WA==',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-03-03 12:13:09') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1298, 248, 1, 1, 3200.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-12 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'U2FncmVkbyAjMTU1IGRlcHRvICAxMDYyIENvbC4gU2FuIEpvc2UgSW5zdXJnZW50ZXMsICBCLiBKdcOhcmV6',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcy4=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001298 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001298, 248, 1, 1, 3200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001298, 'Láser verde cortesia', 0.0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-12 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'U2FncmVkbyAjMTU1IGRlcHRvICAxMDYyIENvbC4gU2FuIEpvc2UgSW5zdXJnZW50ZXMsICBCLiBKdcOhcmV6',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcy4gTHVnYXIgeSBjbGllZW50ZSBjb25vY2lkbywgcGlkZSBhIEplcnJ5IGNvbW8gdG9kb3MgbG9zIGHDsW9zLg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001298 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001298, 248, 1, 1, 3200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001298, 'Laser verde cortesia', 0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-12 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'U2FncmVkbyAjMTU1IGRlcHRvICAxMDYyIENvbC4gU2FuIEpvc2UgSW5zdXJnZW50ZXMsICBCLiBKdcOhcmV6',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcy4gTHVnYXIgeSBjbGllZW50ZSBjb25vY2lkbywgcGlkZSBhIEplcnJ5IGNvbW8gdG9kb3MgbG9zIGHDsW9zLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001298 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001298, 248, 1, 1, 3200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001298, 'Laser verde cortesia', 0,0) 
+
+

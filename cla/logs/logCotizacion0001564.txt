@@ -1,0 +1,49 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1095,
+                            '2021-05-29 19:30',
+                            '17:30',
+                            'VHVsYS1TYW4gTWFyY28gS20gMiwgRW1wbGVhZG9zIFRvbHRlY2EsIFNhbiBNYXJjb3MsIFR1bGEgQWxsZW5kZSBIaWRhbGdvLiAgIEhPVEVMIFJFQUwgREVMIEJPU1FVRQ==',
+                            'SmFyZGluIGNvbiBjYXJwYSBQLkIu',
+                            1,
+                            NULL,
+                            '2020-10-13 11:19:16',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1564, 102, 16, 2, 6400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1564, 386, 9, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1564, ' horas extras de la pista ', 2000,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1564, 'Casetas ida y vuelta', 400,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-05-29 19:30',
+                            tmHoraMontaje = '17:30',
+                            tDireccion = 'VHVsYS1TYW4gTWFyY28gS20gMiwgRW1wbGVhZG9zIFRvbHRlY2EsIFNhbiBNYXJjb3MsIFR1bGEgQWxsZW5kZSBIaWRhbGdvLiAgIEhPVEVMIFJFQUwgREVMIEJPU1FVRQ==',
+                            tObservaciones = 'SmFyZGluIGNvbiBjYXJwYSBQLkIu',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001564 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001564, 102, 16, 2, 6400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001564, 386, 9, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001564, ' horas extras de la pista ', 2000,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001564, 'Casetas ida y vuelta', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001564, 'Gasolina', 1470,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001564, 'Viaticos personal', 600,0) 
+
+

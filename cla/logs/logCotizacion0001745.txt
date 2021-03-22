@@ -1,0 +1,33 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1193,
+                            '2020-12-18 20:00',
+                            '18:00',
+                            'QXYuIEplc3VzIGRlbCBNb250ZSA0MyBEZXB0byAzMDIgQiBIYWNpZW5kYSBkZSBsYXMgUGFsbWFzLCBIdWl4cXVpbHVjYW4=',
+                            'UC5CLiA=',
+                            1,
+                            NULL,
+                            '2020-12-16 15:50:03',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1745, 105, 1, 1, 3600.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1745, 21, 4, 2, 1800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1745, 337, 2, 2, 1100.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1745, 333, 1, 2, 1000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1745, 'Equipo de cocteleria, 30 vasos de cristal cortesia', 0.00,0) 
+
+

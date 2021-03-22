@@ -1,0 +1,44 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1089,
+                            '2020-10-09 07:00',
+                            '05:00',
+                            'Q29sLiBST21lcm8gZGUgVGVycmVyb3M=',
+                            'Q290aXphY2lvbg==',
+                            2,
+                            NULL,
+                            '2020-10-03 10:06:33',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1547, 103, 1, 1, 1500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1547, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1547, 'Calentador para exterior tipo hongo', 1250,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-09 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'Q29sLiBST21lcm8gZGUgVGVycmVyb3M=',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001547 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001547, 103, 1, 1, 1500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001547, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001547, 'Calentador para exterior tipo hongo', 1250,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001547, 'Acceso por subir y bajar 4 pisos ', 500,0) 
+
+

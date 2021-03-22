@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1252,
+                            '2021-02-18 14:00',
+                            '12:00',
+                            'Sm9hcXVpbiAgR2FsbG8gMTAxIFNhbnRhIEZlLCBDdWFqaW1hbHBh',
+                            'UC5CLiBpbmRpY2EgY2xpZW50ZSAgZXN0w6EgZnJlbnRlIGEgbGEgSWdsZXNpYSAgeSBlbCBsdWdhciBzZSBsbGFtYSBCbGFjayBCb3gu',
+                            2,
+                            1,
+                            '2021-02-17 14:29:53',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1820, 372, 1, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1820, 52, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1820, 53, 6, 2, 300.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1820, 'Renta por 2 dias mas ', 2200,0) 
+
+

@@ -1,0 +1,28 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1144,
+                            '2020-11-18 16:00',
+                            '14:00',
+                            'Q2FsZXJvIDM5IFNhbiBBbmdlbCwgQS4gT2JyZWfDs24gZXNxdWluYSBjYWxsZSBBcnR1cm8uIA0KQ2FzYSBSb2ph',
+                            'UC5CLiBpbmRpY2EgY2xpZW50ZS4=',
+                            2,
+                            NULL,
+                            '2020-11-18 11:53:10',
+                            1) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1654, '2 calentadores para exterior tipo hongo', 2500,0) 
+
+

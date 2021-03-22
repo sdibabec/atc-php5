@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1212,
+                            '2020-12-23 09:00',
+                            '07:00',
+                            'QXYuIENveW9hY2FuIDUwMSAtIDEwMSBDb2wuIERlbCBWYWxsZSBlc3F1aW5hIFRvcnJlcyBBZGFsaWQsIEIuIEp1YXJleg==',
+                            'Q2xpZW50ZSByZWNvZ2UgbGEgbWFxdWluYSBkZSBodW1vLg==',
+                            2,
+                            NULL,
+                            '2020-12-21 18:54:14',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1762, 289, 1, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1762, 'Diferencia maquina de humo ', 50,0) 
+
+

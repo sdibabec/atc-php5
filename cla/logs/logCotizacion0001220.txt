@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            945,
+                            '2020-02-15 19:00',
+                            '17:00',
+                            'UGVyanVyaWEgMTkwIENvbC4gQmVuaXRvIEp1YXJleiwgTmV6YWh1YWxjb3lvdGwgZW50cmUgQ2llbGl0byBMaW5kbyB5IEFtYW5lY2VyIFJhbmNoZXJv',
+                            'Q2l0YSBrYXJlbiAgMTcganVsaW8gMjAxOS4=',
+                            1,
+                            NULL,
+                            '2020-02-12 17:28:21') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1220, 39, 1, 1, 8600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1220, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1220, '10%  flete', 860,0) 
+
+

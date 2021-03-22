@@ -1,0 +1,12 @@
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-01-25 09:00',
+                            tmHoraMontaje = '07:00',
+                            tDireccion = 'SXJvbG8gMTI0IGludCA0MDEgQ29sLiBaYWNhaGl0emNvLCBCLiBKdWFyZXogZW50cmUgQmVuZ2FsYSB5IEJyZXRhw7Fh',
+                            tObservaciones = 'Q2l0YSBrYXJlbiAgMDYgZW5lcm8gMTY6MDAg',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001061 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001061, 5, 1, 1, 5100.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001061, '2 horas extras ', 1700,0) 
+
+

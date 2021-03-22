@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1086,
+                            '2020-10-10 08:00',
+                            '06:00',
+                            'VmFsbGUgZGUgQXJhZ29uLCAzcmEgU2VjYw==',
+                            'eA==',
+                            2,
+                            NULL,
+                            '2020-10-01 11:19:13',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1537, 173, 4, 1, 1180.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1537, 'Flete', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1537, 'Recoleccion domingo ', 200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-10 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'VmFsbGUgZGUgQXJhZ29uLCAzcmEgU2VjYw==',
+                            tObservaciones = 'eA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001537 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001537, 173, 5, 1, 1475.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001537, 'Flete', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001537, 'Recoleccion domingo ', 200,0) 
+
+

@@ -1,0 +1,49 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            911,
+                            '2020-02-29 14:00',
+                            '12:00',
+                            'VGV0ZWxwYW4sIEFsdmFybyBPYnJlZ29uLg==',
+                            'Q290aXphY2nDs24=',
+                            1,
+                            NULL,
+                            '2020-01-31 18:27:22') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1174, 357, 1, 1, 8900.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-29 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'VGV0ZWxwYW4sIEFsdmFybyBPYnJlZ29uLg==',
+                            tObservaciones = 'Q290aXphY2nDs24=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001174 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001174, 14, 1, 1, 6775.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-29 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'VGV0ZWxwYW4sIEFsdmFybyBPYnJlZ29uLg==',
+                            tObservaciones = 'Q290aXphY2nDs24=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001174 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001174, 17, 1, 1, 7000.00,0) 
+
+

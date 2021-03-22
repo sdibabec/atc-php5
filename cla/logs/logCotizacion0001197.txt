@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            928,
+                            '2020-02-14 19:00',
+                            '17:00',
+                            'IkNvbmRvbWluaW8gVGF1YSIgUHJvbG9uZ2FjaW9uIFNhbiBBbnRvbmlvICM3LCBDb2wuIENhcm9sYS4gQWx2YXJvIE9icmVnb24g',
+                            'eA==',
+                            1,
+                            NULL,
+                            '2020-02-08 15:26:13') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1197, 105, 1, 1, 3600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1197, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1197, 255, 2, 2, 600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1197, 145, 1, 2, 700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1197, 'Videoproyector con pantalla de 2.00 x 2.20 ', 1500,0) 
+
+

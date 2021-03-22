@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1186,
+                            '2020-12-12 07:00',
+                            '05:00',
+                            'MmRvLiByZXRvcm5vIFNpZXJyYSBJdGFtYmUgNTcgZnJhY2MuIFJlYWwgZGUgbGFzIExvbWFzLCBCb3NxdWUgZGUgbGFzIExvbWFzLCBlbnRyYXIgcG9yIEFodWVodWV0ZXMgU3Vy',
+                            'U2UgZW50cmVnYSBlbCB2aWVybmVz',
+                            2,
+                            NULL,
+                            '2020-12-10 16:48:34',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1730, 194, 2, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1730, 'Diferencia de los calentadores', 100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1730, '1 mesa redonda plegable 1.50 diametro  con mantel', 200,0) 
+
+

@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1271,
+                            '2021-03-20 11:00',
+                            '09:00',
+                            'QWxmb25zbyBoZXJyZXJhIDEzIGRlcHRvIDEgQ29sLiBTYW4gUmFmYWVsLCBDdWF1aHRlbW9jLCBlbnRyZSBNaWd1ZWwgRSBTaHVsdHMgWSBTZXJhcGlvIFJlbmRvbg==',
+                            'UC5CLiA=',
+                            2,
+                            NULL,
+                            '2021-03-16 18:54:53',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1856, 36, 3, 2, 150.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1856, 32, 3, 2, 360.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1856, 34, 8, 2, 440.00,0) 
+
+

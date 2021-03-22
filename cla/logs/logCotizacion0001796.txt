@@ -1,0 +1,36 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1237,
+                            '2021-01-23 11:00',
+                            '09:00',
+                            'U2llcnJhIEdhbW9uICBOby4gMTEwIGRlcHRvICAzMDEgQ29sLiBMb21hcyBkZSBDaGFwdWx0ZXBlYywgTS4gSGlkYWxnby4gMTE4MDAgZW50cmUgU2llcnJhIE1vamFkYSB5IEF2LiBQYXNlb3MgZGUgTGFzIFBhbG1hcw==',
+                            'U3ViaXIgcG9yIGVzY2FsZXJhIDMgcGlzb3MgZGFyw6EgcHJvcGluYS4=',
+                            2,
+                            NULL,
+                            '2021-01-20 15:24:24',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1796, 267, 1, 1, 640.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 49, 1, 2, 500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 50, 2, 2, 700.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 194, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 310, 10, 2, 70.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1796, 372, 1, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1796, '10 Copas de vino tinto', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1796, '10 Tequileros', 50,0) 
+
+

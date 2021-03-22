@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1259,
+                            '2021-02-26 19:00',
+                            '17:00',
+                            'QXJlbmFsICMgNDQ5IGludCAyOCBDb2wuIFZhbGxlIEVzY29uZGlkbywgVGxhbHBhbiwgZnJlbnRlIGEgSHl1bmRhaS4=',
+                            'U2UgbW9udGFyYSB1biBkaWEgYW50ZXMsIGVzIHVuIHBvY28gY29tcGxpY2Fkby4gDQpGdWUgYSBsYSBjaXRhIE1hbnVlbC4=',
+                            1,
+                            NULL,
+                            '2021-02-24 11:52:20',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1828, 77, 1, 1, 9300.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1828, 194, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1828, 'Calentador para exterior tipo Hongo ', 300,0) 
+
+

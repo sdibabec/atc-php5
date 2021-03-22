@@ -1,0 +1,40 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            22,
+                            '2020-02-21 11:30',
+                            '09:30',
+                            'UmlvIE5pbG8gIzcxLCBDb2wuIEN1YXVodGVtb2MuIEN1YXVodGVtb2MNCkVzcXVpbmEgY29uIFJpbyBMZXJtYSA=',
+                            'UEINClNFIERFSkEgRUwgSlVFR08gREUgNSBTSUxMQVMgWSBMQSBNRVNBIEVOICQyODA=',
+                            2,
+                            NULL,
+                            '2020-02-19 13:51:08') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1243, 46, 10, 2, 350.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1243, '12 mesas periqueras cromo negro con 60 sillas sin mantel', 3360,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-21 11:30',
+                            tmHoraMontaje = '09:30',
+                            tDireccion = 'UmlvIE5pbG8gIzcxLCBDb2wuIEN1YXVodGVtb2MuIEN1YXVodGVtb2MNCkVzcXVpbmEgY29uIFJpbyBMZXJtYSA=',
+                            tObservaciones = 'UEINClNFIERFSkEgRUwgSlVFR08gREUgNSBTSUxMQVMgWSBMQSBNRVNBIEVOICQyODA=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001243 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001243, 174, 10, 1, 2950.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001243, 46, 10, 2, 350.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001243, '2 mesas periqueras cromo negro ', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001243, '10 sillas periqueras cromo negro (total 70 sillas cmo ngo)', 0.00,0) 
+
+

@@ -1,0 +1,53 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1075,
+                            '2020-09-15 20:00',
+                            '18:00',
+                            'Q290aXphY2nDs24g',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-09-14 10:42:54',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1513, 145, 1, 1, 3200.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-15 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'UHJpdmFkYS4gU2FuIElzaWRybyAjIDM1IC0gMTAwNCBDb2wuIFJlZm9ybWEgU29jaWFsLCBNLiBIaWRhbGdvICBFbnRyZSBTYW4gSXNpZHJvLCBUZWNhbWFjaGFsY28geSBQZXJpZmVyaWNv',
+                            tObservaciones = 'SW5kaWNhIGNsaWVudGUgZXZlbnRvIGVuIFJvb2YgR2FyZGVuIHBpc28gMTUgcG9yIGVsZXZhZG9yLg0KTW9udGFqZSAxNiBocnMgIEFicmlzIGNvbiBsYSBjYW5jacOzbiBRVUUgVk9ZIEhBQ0VSIFNJTiBUSSBkZSBCZW5qYW1pbiwgYSBsYSAxOTozMCBhYnJpciBjb24gZXN0YSBjYW5jaW9uLiA=',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001513 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001513, 145, 1, 1, 3200.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-15 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'UHJpdmFkYS4gU2FuIElzaWRybyAjIDM1IC0gMTAwNCBDb2wuIFJlZm9ybWEgU29jaWFsLCBNLiBIaWRhbGdvICBFbnRyZSBTYW4gSXNpZHJvLCBUZWNhbWFjaGFsY28geSBQZXJpZmVyaWNv',
+                            tObservaciones = 'SW5kaWNhIGNsaWVudGUgZXZlbnRvIGVuIFJvb2YgR2FyZGVuIHBpc28gMTUgcG9yIGVsZXZhZG9yLg0KTW9udGFqZSAxNiBocnMgIEFicmlzIGNvbiBsYSBjYW5jacOzbiBRVUUgVk9ZIEhBQ0VSIFNJTiBUSSBkZSBCZW5qYW1pbiwgYSBsYSAxOTozMCBhYnJpciBjb24gZXN0YSBjYW5jaW9uLiANClByZWd1bmFyIHBvciBIRUNUT1IgR0FORElOSSBlcyBxdWllbiB2aXZlIGFoaS4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001513 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001513, 145, 1, 1, 3200.00,0,0) 
+
+

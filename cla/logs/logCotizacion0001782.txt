@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2021-01-20 07:00',
+                            '05:00',
+                            'Q290aXphY2lvbiwgU3IuIFJ1eGVsbCBJc2FhYy4=',
+                            'WA==',
+                            2,
+                            NULL,
+                            '2021-01-07 11:33:07',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1782, 57, 10, 2, 2700.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1782, 60, 10, 2, 2000.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-01-20 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'Q290aXphY2lvbiwgU3IuIFJ1eGVsbCBJc2FhYy4=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001782 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001782, 60, 10, 2, 2000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001782, 62, 10, 2, 2000.00,0) 
+
+

@@ -1,0 +1,27 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            21,
+							1,
+                            1,
+                            '2020-03-10 05:30',
+                            '03:30',
+                            'ZHlo',
+                            'ZWRoZg==',
+                            1,
+                            NULL,
+                            '2020-03-03 12:20:09') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1302, 300, 1, 1, 10900.00,0) 
+
+

@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            925,
+                            '2020-02-15 10:00',
+                            '08:00',
+                            'U3VyIDEyNiAjNzgsIENvbC4gQW1lcmljYSwgTWlndWVsIEhpZGFsZ28NCkVudHJlIFBudGUgNzUgeSBQbnRlIDczIChBIGxhIGFsdHVyYSBkZWwgSG9zcGl0YWwgQUJDKSA=',
+                            'UEI=',
+                            2,
+                            NULL,
+                            '2020-02-08 13:03:41') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1193, 179, 5, 1, 1125.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1193, 26, 4, 2, 100.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1193, 287, 3, 2, 360.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1193, 36, 3, 2, 0.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1193, 37, 12, 2, 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1193, '12 sillas periqueras moteadas', 780,0) 
+
+

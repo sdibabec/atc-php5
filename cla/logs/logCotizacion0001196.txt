@@ -1,0 +1,52 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-12-18 19:00',
+                            '17:00',
+                            'Q290aXphY2lvbg==',
+                            'Q29hY2FsY28=',
+                            1,
+                            NULL,
+                            '2020-02-08 14:49:05') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1196, 377, 1, 1, 14000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1196, 'Flete por distancia a Coacalco', 1400,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-18 19:00',
+                            tmHoraMontaje = '17:00',
+                            tDireccion = 'Q290aXphY2lvbg==',
+                            tObservaciones = 'Q29hY2FsY28=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001196 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001196, 378, 1, 1, 16900.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001196, 'Flete por distancia a Coacalco', 1690,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-18 19:00',
+                            tmHoraMontaje = '17:00',
+                            tDireccion = 'Q290aXphY2lvbg==',
+                            tObservaciones = 'Q29hY2FsY28=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001196 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001196, 69, 1, 1, 17800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001196, 'Flete por distancia a Coacalco', 1780,0) 
+
+

@@ -1,0 +1,130 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            645,
+                            '2020-03-06 08:00',
+                            '06:00',
+                            'Q290aXphY2lvbiA=',
+                            'UEI=',
+                            1,
+                            NULL,
+                            '2020-02-19 12:38:01') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1242, 271, 1, 1, 1500.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1242, 'Hora extra entrada VIP', 200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'Q290aXphY2lvbiA=',
+                            tObservaciones = 'UEI=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 271, 1, 1, 1500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'IldhbG1hcnQgVG9yZW8iIEFuaWxsbyBQZXJpZi4gIzY0NywgQ29sLiBQZXJpb2Rpc3RhLCBNaWd1ZWwgSGlkYWxnbw==',
+                            tObservaciones = 'UGlzbyAzIChzZSBzdWJlIGEgdHJhdmVzIGRlIG1vbnRhY2FyZ2FzKQ==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 114, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Entrada V.I.P     Servicio por 6 horas', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 pasillo de 96 cms x 2.97 mts ', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '3 Unifilas', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'IldhbG1hcnQgVG9yZW8iIEFuaWxsbyBQZXJpZi4gIzY0NywgQ29sLiBQZXJpb2Rpc3RhLCBNaWd1ZWwgSGlkYWxnbw==',
+                            tObservaciones = 'UGlzbyAzIChzZSBzdWJlIGEgdHJhdmVzIGRlIG1vbnRhY2FyZ2FzKQ==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 114, 1, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Entrada V.I.P     Servicio por 6 horas', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 pasillo de 96 cms x 2.97 mts ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '3 Unifilas', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 Door man ', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'IldhbG1hcnQgVG9yZW8iIEFuaWxsbyBQZXJpZi4gIzY0NywgQ29sLiBQZXJpb2Rpc3RhLCBNaWd1ZWwgSGlkYWxnbw==',
+                            tObservaciones = 'UGlzbyAzIChzZSBzdWJlIGEgdHJhdmVzIGRlIG1vbnRhY2FyZ2FzKQ==',
+                            bIVA = 1
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 114, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 pasillo de 96 cms x 2.97 mts ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Entrada V.I.P     Servicio por 6 horas', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '3 Unifilas', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 Door man ', 0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'IldhbG1hcnQgVG9yZW8iIEFuaWxsbyBQZXJpZi4gIzY0NywgQ29sLiBQZXJpb2Rpc3RhLCBNaWd1ZWwgSGlkYWxnbw==',
+                            tObservaciones = 'UGlzbyAzIChzZSBzdWJlIGEgdHJhdmVzIGRlIG1vbnRhY2FyZ2FzKQ==',
+                            bIVA = 1
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Entrada V.I.P     Servicio por 6 horas', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 pasillo de 96 cms x 2.97 mts ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 Door man ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '4 Unifilas ', 200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'IldhbG1hcnQgVG9yZW8iIEFuaWxsbyBQZXJpZi4gIzY0NywgQ29sLiBQZXJpb2Rpc3RhLCBNaWd1ZWwgSGlkYWxnbw==',
+                            tObservaciones = 'UGlzbyAzIChzZSBzdWJlIGEgdHJhdmVzIGRlIG1vbnRhY2FyZ2FzKQ==',
+                            bIVA = 1
+                            WHERE eCodEvento = 0001242 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 45, 1, 2, 120.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 47, 1, 2, 35.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001242, 233, 1, 2, 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 Door man ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Entrada V.I.P     Servicio por 6 horas', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '1 pasillo de 96 cms x 2.97 mts ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, 'Hora extra entrada VIP', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001242, '4 Unifilas ', 200,0) 
+
+

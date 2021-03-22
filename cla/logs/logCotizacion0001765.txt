@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1216,
+                            '2020-12-30 12:00',
+                            '10:00',
+                            'TW9udGUgQW50dWNvICAxNDUgTG9tYXMgZGUgQ2hhcHVsdGVwZWMsIE0uIEhpZGFsZ28gZW50cmUgQWxwZXMgeSBTaWVycmEgTGVvbmE=',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2020-12-22 17:48:22',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1765, 194, 2, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1765, 'Diferencia de los calentadores', 100,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-29 12:00',
+                            tmHoraMontaje = '10:00',
+                            tDireccion = 'TW9udGUgQW50dWNvICAxNDUgTG9tYXMgZGUgQ2hhcHVsdGVwZWMsIE0uIEhpZGFsZ28gZW50cmUgQWxwZXMgeSBTaWVycmEgTGVvbmE=',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001765 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001765, 194, 2, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001765, 'Diferencia de los calentadores', 100,0) 
+
+

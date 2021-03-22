@@ -1,0 +1,322 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1038,
+                            '2020-07-11 17:00',
+                            '15:00',
+                            'Qm9zcXVlIFJlYWw=',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-07-02 16:51:16',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1455, 105, 1, 1, 3600.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1455, 177, 4, 1, 980.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1455, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1455, 'Barra iluminada y set de barra ', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 4, 1, 1, 4900.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 105, 1, 1, 3600.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 105, 1, 1, 3600.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 159, 4, 1, 1600.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 271, 1, 1, 1500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 102, 6, 2, 2400.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales cuadrada con mantel blanco ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trInche ', 120,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales cuadrada con mantel blanco ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trInche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos medianos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos pasteleros ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Cucharitas ', 80,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales cuadrada con mantel blanco ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Hora extra  del servicio antro de 18 a 24 hrs', 1000,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales cuadrada con mantel blanco ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Hora extra  del servicio antro de 18 a 24 hrs', 1000,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Hora extra  del servicio antro de 18 a 24 hrs', 1000,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales cuadrada con mantel blanco ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos trinche redondos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '10 juegos de platito y taza para cafe ', 80,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Hora extra  del servicio antro de 18 a 24 hrs', 950,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos trinche redondos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '10 juegos de platito y taza para cafe ', 80,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '$0 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Bola de espejos de cortesia', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 7450.00,0,1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Mesero ', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '10 juegos de platito y taza para cafe ', 80,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '40 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 7450.00,0,1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '40 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Platos redondos trinche ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 7450.00,0,1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales con mantel blanco', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20  platos redondos medianos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '40 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos redondos pasteleros', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Bola de espejos cortesia', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 7450.00,0,1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Bola de espejos cortesia', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos redondos pasteleros', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '40 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20  platos redondos medianos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales con mantel blanco', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos redondos trinche', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-11 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Qm9zcXVlIFJlYWw=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001455 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001455, 16, 1, 1, 7450.00,0,1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001455, 6, 3, 2, 750.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos redondos trinche', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Mesas imperiales con mantel blanco', 300,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 Caminos para mesa imperial', 60,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20  platos redondos medianos', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 Servilletas de tela ', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Estructura de 4 cortinas rojas para dividir el area', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Bola de espejos cortesia', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '20 platos redondos pasteleros', 120,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '40 tenedores, 20 cuchillos 20 cucharitas ', 320,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, '2 horas extras de mesero y bar tender', 800,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001455, 'Pantalla Grande con videoproyector y VDJ', 2000,0) 
+
+

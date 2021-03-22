@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1260,
+                            '2021-02-26 13:00',
+                            '11:00',
+                            'RnVlbnRlIGRlbCBSZXkgIyAzIENvbC4gTG9tYXMgZGUgVGVjYW1hY2hhbGNvLCBOYXVjYWxwYW4gIGVzcXVpbmEgY29uIEF2LiBEZSBsb3MgQm9zcXVlcy4=',
+                            'SW5kaWNhIGNsaWVudGUgaGF5IGVsZXZhZG9yICBhbXBsaW8gcGFyYSBzdWJpciBhIHRlcnJhemEuIA==',
+                            1,
+                            NULL,
+                            '2021-02-24 12:46:11',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1831, 5, 1, 1, 5100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1831, 'No lleva equipo de sonido.', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1831, 'Lleva mesero ', 0.00,0) 
+
+

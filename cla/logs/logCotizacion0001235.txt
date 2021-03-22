@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            698,
+                            '2020-02-25 08:30',
+                            '06:30',
+                            'QXYuIEhvcmFjaW8gIzE3MjIsIENvbC4gUG9sYW5jbyBJIFNlY2MsIE1pZ3VlbCBIaWRhbGdv',
+                            'UEI=',
+                            1,
+                            NULL,
+                            '2020-02-17 14:51:20') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1235, 375, 1, 1, 2800.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1235, 'Pantallla LCD 40"', 1000,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1235, 'Pantalla LCD 50"', 1500,0) 
+
+

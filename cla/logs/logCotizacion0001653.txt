@@ -1,0 +1,67 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1142,
+                            '2020-11-21 11:00',
+                            '09:00',
+                            'UHJlc2EgUGFiZWxsb24gIyA1NSAoY2FzYSkgQ29sLiBJcnJpZ2FjacOzbiwgTS4gSGlkYWxnbyAgZXNxdWluYSBBdi4gTGVnYXJpYSB5IE1pZ3VlbCBkZSBDZXJ2YW50ZXMgU2FhdmVkcmE=',
+                            'U3ViaXIgcG9yIGVzY2FsZXJhIDMgcGlzb3Mu',
+                            2,
+                            NULL,
+                            '2020-11-17 13:19:08',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1653, 90, 1, 1, 1650.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1653, 'Diferencia por cambio de un puff  por sillon individual blanco', 1225,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1653, 'Diferencia por cambiar una banca doble por un love seat blanco ', 90,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-21 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'UHJlc2EgUGFiZWxsb24gIyA1NSAoY2FzYSkgQ29sLiBJcnJpZ2FjacOzbiwgTS4gSGlkYWxnbyAgZXNxdWluYSBBdi4gTGVnYXJpYSB5IE1pZ3VlbCBkZSBDZXJ2YW50ZXMgU2FhdmVkcmE=',
+                            tObservaciones = 'U3ViaXIgcG9yIGVzY2FsZXJhIDMgcGlzb3Mu',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001653 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001653, 90, 1, 1, 1650.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001653, 'Diferencia por cambio de un puff  por sillon individual blanco', 1250,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-21 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'UHJlc2EgUGFiZWxsb24gIyA1NSAoY2FzYSkgQ29sLiBJcnJpZ2FjacOzbiwgTS4gSGlkYWxnbyAgZXNxdWluYSBBdi4gTGVnYXJpYSB5IE1pZ3VlbCBkZSBDZXJ2YW50ZXMgU2FhdmVkcmE=',
+                            tObservaciones = 'U3ViaXIgcG9yIGVzY2FsZXJhIDMgcGlzb3Mu',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001653 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001653, 90, 1, 1, 1650.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001653, 'Diferencia por cambio de un puff  por sillon individual blanco', 125,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-21 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'UHJlc2EgUGFiZWxsb24gIyA1NSAoY2FzYSkgQ29sLiBJcnJpZ2FjacOzbiwgTS4gSGlkYWxnbyAgZXNxdWluYSBBdi4gTGVnYXJpYSB5IE1pZ3VlbCBkZSBDZXJ2YW50ZXMgU2FhdmVkcmE=',
+                            tObservaciones = 'U3ViaXIgcG9yIGVzY2FsZXJhIDMgcGlzb3Mu',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001653 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001653, 90, 1, 1, 1650.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001653, 'Diferencia por cambio de un puff  por sillon individual blanco', 125,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001653, 'Diferencia por cambiar una banca doble por un love seat blanco ', 90,0) 
+
+

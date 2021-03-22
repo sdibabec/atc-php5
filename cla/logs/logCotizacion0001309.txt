@@ -1,0 +1,39 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            940,
+                            '2020-03-06 12:00',
+                            '10:00',
+                            'UHJpbWVyYSBDZGEgMiBkZSBBYnJpbCAjMjEsIFNhbnRhIEJhcmJhcmEsIEN1YXV0aXRsYW4gSXpjYWxsaQ==',
+                            'Q2xpZW50ZSByZWNvZ2UgeSBlbnRyZWdhIA==',
+                            2,
+                            1,
+                            '2020-03-03 14:34:28') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1309, 25, 14, 2, 1400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1309, 148, 14, 2, 280.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-06 12:00',
+                            tmHoraMontaje = '10:00',
+                            tDireccion = 'UHJpbWVyYSBDZGEgMiBkZSBBYnJpbCAjMjEsIFNhbnRhIEJhcmJhcmEsIEN1YXV0aXRsYW4gSXpjYWxsaQ==',
+                            tObservaciones = 'UkVOVEEgUE9SIERPUyBEw41BUyA=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001309 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001309, 25, 14, 2, 1400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001309, 148, 14, 2, 280.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001309, 'Renta por dos dias ', 1680,0) 
+
+

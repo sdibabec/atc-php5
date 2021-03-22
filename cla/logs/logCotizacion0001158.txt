@@ -1,0 +1,46 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            61,
+                            '2020-02-08 11:30',
+                            '09:30',
+                            'RmlsaXBpbmFzICMxODYgLSA0MDcsIENvbC4gU2FuIFNpbW9uIFRpY3VtYWMsIEJlbml0byBKdWFyZXogDQo=',
+                            'MyBwaXNvcyBwb3IgZXNjYWxlcmEg',
+                            2,
+                            NULL,
+                            '2020-01-28 12:26:00') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1158, 266, 4, 1, 2080.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1158, 57, 2, 2, 540.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1158, 61, 2, 2, 0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1158, 11, 2, 2, 0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1158, 60, 1, 2, 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1158, '3 pisos por escalera ', 450,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-08 11:30',
+                            tmHoraMontaje = '09:30',
+                            tDireccion = 'RmlsaXBpbmFzICMxODYgLSA0MDcsIENvbC4gU2FuIFNpbW9uIFRpY3VtYWMsIEJlbml0byBKdWFyZXogDQo=',
+                            tObservaciones = 'MyBwaXNvcyBwb3IgZXNjYWxlcmEg',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001158 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001158, 266, 4, 1, 2080.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001158, 57, 2, 2, 540.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001158, 61, 2, 2, 200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001158, 11, 2, 2, 150.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001158, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001158, '3 pisos por escalera ', 450,0) 
+
+

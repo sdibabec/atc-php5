@@ -1,0 +1,188 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1038,
+                            '2020-07-18 14:00',
+                            '12:00',
+                            'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            1,
+                            NULL,
+                            '2020-07-11 10:31:06',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1460, '2 Entradas VIP con dorman', 2100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1460, 'Audio con Karaoke, pantalla grande y VDj', 2000,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas VIP con dorman', 2100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Audio con Karaoke, pantalla grande, cabezas roboticas', 2500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Audio con Karaoke, pantalla grande, cabezas roboticas ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mesas con mantel para la comida ', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Audio con Karaoke, pantalla grande, cabezas roboticas ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mesas con mantel para la comida ', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Bola de espejos', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '4 Mesas para comida con mantel blanoc', 600,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mesas con mantel para la comida ', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Audio con Karaoke, pantalla grande, cabezas roboticas ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Bola de espejos', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '4 Mesas para comida con mantel blanoc', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas Vip con doorman ', 2100,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 383, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Bola de espejos', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Audio con Karaoke, pantalla grande, cabezas roboticas ', 2500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mesas con mantel para la comida ', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '4 Mesas para comida con mantel blanoc', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas Vip con doorman ', 2100,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 383, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Mesas para comida con mantel blanco', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas Vip con doorman ', 2100,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 383, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas Vip con doorman ', 2100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Mesas para comida con mantel blanco', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Bola de espejos ', 0.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 14:00',
+                            tmHoraMontaje = '12:00',
+                            tDireccion = 'UmVzaWRlbmNpYWwgR3JlZW4gMjIsIFByaXZhZGEgZGVsIFJvbWFuY2UgMTAsIEJvc3F1ZSBSZWFsLCBIdWl4cXVpbGl1Y2FuICBFZG8uIE1leGljbw==',
+                            tObservaciones = 'U2Fsb24gZGUgZXZlbnRvcywgUC5CLg==',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001460 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001460, 415, 1, 1, 9500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 382, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 102, 9, 2, 3600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 383, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001460, 384, 1, 2, 2000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Bola de espejos ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Mampara para division', 400,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Mesas para comida con mantel blanco', 600,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, 'Cambio de dj a video DJ', 0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '2 Entradas Vip con doorman ', 2100,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001460, '20 Servilletas de tela', 150,0) 
+
+

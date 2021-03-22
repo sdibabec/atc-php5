@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-07-31 07:00',
+                            '05:00',
+                            'Q290aXphY2lvbiBNb2JpbGlhcmlvIExhb3VuZ2U=',
+                            'WA==',
+                            2,
+                            NULL,
+                            '2020-07-29 21:32:09',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1477, 58, 16, 2, 3200.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1477, 60, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1477, 'Renta por 3 dias ', 7200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-31 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'Q290aXphY2lvbiBNb2JpbGlhcmlvIFZpbnRhZ2U=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001477 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001477, 50, 16, 2, 5600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001477, 51, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001477, 'Renta por 3 dias ', 12000,0) 
+
+

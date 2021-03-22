@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            741,
+                            '2020-09-05 19:30',
+                            '17:30',
+                            'QXYuIEJvc3F1ZXMgZGUgUmVmb3JtYSA2MTUgQ29sLiBCb3NxdWUgZGUgbGFzIExvbWFzLCAgRXNxdWluYSBCb3NxdWUgZGUgTWV6cXVpdGVzLCBDdWFqaW1hbHBh',
+                            'THVnYXIgeSBjbGllbnRlIGNvbm9jaWRvLg==',
+                            1,
+                            NULL,
+                            '2020-09-03 15:13:00',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1503, 105, 1, 1, 3600.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1503, '4 jgos periq. cro-bco sin mantel', 380,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1503, '40 vasos policarbonato y set de barra cortesia', 0.00,0) 
+
+

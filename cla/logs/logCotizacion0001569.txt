@@ -1,0 +1,33 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1097,
+                            '2020-10-16 19:30',
+                            '17:30',
+                            'UHJvdmlkZW5jaWEgIyA0MSBDb2wuIEF4b3RsYSwgQS4gT2JyZWdvbiBlbnRyZSBGcmFuY2lhIHkgUm9sZGFu',
+                            'SW5kaWNhIGNsaWVudGUgUC5CLiAgc2luIHByb2JsZW1hIGRlIGFjY2VzbywgbW9udGFqZSBlbiBqYXJkaW4u',
+                            1,
+                            NULL,
+                            '2020-10-14 14:31:24',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1569, 207, 1, 1, 6900.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1569, 102, 6, 2, 2400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1569, 194, 2, 2, 2400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1569, 'Hora extra', 350,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1569, '2 Meseros ', 800,0) 
+
+

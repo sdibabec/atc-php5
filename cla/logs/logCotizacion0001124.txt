@@ -1,0 +1,12 @@
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-01-25 04:00',
+                            tmHoraMontaje = '02:00',
+                            tDireccion = 'TGF1cmVsICMgNyBDb2wuIFNhbnRhIE1pZ3VlbCBYaWNhbGNvLCBUbGFscGFuIGVudHJlIEZpY3VzIHkgQXJyZXBlbnRpbWllbnRv',
+                            tObservaciones = 'TWEuIFJvc2FyaW8gQ3J1eiBNZW5kb3phLCBJbmRpY2EgUC5iLiBzaW4gcHJvYmxlbWEgZGUgYWNjZXNvIHkgdGVjaGFkby4NCg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001124 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001124, 105, 1, 1, 3600.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001124, 'Flete', 500,0) 
+
+

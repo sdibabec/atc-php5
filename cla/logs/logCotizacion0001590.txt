@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            43,
+                            '2020-10-24 06:00',
+                            '04:00',
+                            'UmVpbXMgMzQwIGNhc2EgMzIgQ29sLiBWaWxsYSBWZXJkdW0sIHN1YmllbmRvIHBvciBsYSBBZ3VpbGFzLiBBLiBPYnJlZ29uLg0KQWNjZXNvIHBvciBjYXNldGEgMg==',
+                            'U3ViaXIgdW5vcyBwb2NvcyBlc2NhbG9uZXMsIGNsaWVudGUgZnJlY3VlbnRlLg==',
+                            2,
+                            NULL,
+                            '2020-10-21 12:44:06',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1590, 170, 4, 1, 1120.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1590, 'asientos color rojo de las periqueras', 00.0,0) 
+
+

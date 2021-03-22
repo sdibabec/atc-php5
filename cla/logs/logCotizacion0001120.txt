@@ -1,0 +1,12 @@
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-07-18 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'eA==',
+                            tObservaciones = 'Y290aXphY2lvbg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001120 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001120, 10, 1, 1, 6650.00,0,0) 
+
+

@@ -1,0 +1,103 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1037,
+                            '2020-09-19 07:30',
+                            '05:30',
+                            'Q2Vycm8gZGUgbGEgbWFubyAyNSBDb2wuIFJvbWVybyBkZSBUZXJyZXJvcyAsIENveW9hY2FuIGVudHJlIENlcnJvIGRlbCB0ZXNvcm8geSBDZXJybyBkZWwgT3RhdGU=',
+                            'UC5CLg==',
+                            1,
+                            NULL,
+                            '2020-09-17 12:34:21',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1523, 159, 2, 1, 800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1523, 331, 1, 2, 550.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-19 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyAyNSBDb2wuIFJvbWVybyBkZSBUZXJyZXJvcyAsIENveW9hY2FuIGVudHJlIENlcnJvIGRlbCB0ZXNvcm8geSBDZXJybyBkZWwgT3RhdGU=',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001523 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 159, 2, 1, 800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 356, 2, 1, 3000.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 81, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, '4 luminarias led', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Pantalla de tela 2 x 2.50 fotoluminicente para video ', 500,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-19 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyAyNSBDb2wuIFJvbWVybyBkZSBUZXJyZXJvcyAsIENveW9hY2FuIGVudHJlIENlcnJvIGRlbCB0ZXNvcm8geSBDZXJybyBkZWwgT3RhdGU=',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001523 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 356, 2, 1, 3000.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 159, 2, 1, 800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 81, 2, 2, 400.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, '4 luminarias led', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Pantalla de tela 2 x 2.50 fotoluminicente para video ', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Videoproyector con cable HDMI', 1050,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-19 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyAyNSBDb2wuIFJvbWVybyBkZSBUZXJyZXJvcyAsIENveW9hY2FuIGVudHJlIENlcnJvIGRlbCB0ZXNvcm8geSBDZXJybyBkZWwgT3RhdGU=',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001523 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 159, 2, 1, 800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 356, 2, 1, 3000.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 81, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Pantalla de tela 2 x 2.50 fotoluminicente para video ', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, '4 luminarias led', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Videoproyector con cable HDMI', 1050,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Descuento 10% 780.00 por Manuel', ,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-09-19 07:30',
+                            tmHoraMontaje = '05:30',
+                            tDireccion = 'Q2Vycm8gZGUgbGEgbWFubyAyNSBDb2wuIFJvbWVybyBkZSBUZXJyZXJvcyAsIENveW9hY2FuIGVudHJlIENlcnJvIGRlbCB0ZXNvcm8geSBDZXJybyBkZWwgT3RhdGU=',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001523 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 159, 2, 1, 800.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001523, 356, 2, 1, 3000.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 81, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001523, 331, 1, 2, 550.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Pantalla de tela 2 x 2.50 fotoluminicente para video ', 500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, '4 luminarias led', 1500,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Videoproyector con cable HDMI', 1050,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001523, 'Descuento 10% 780.00 por Manuel', 0.00,0) 
+
+

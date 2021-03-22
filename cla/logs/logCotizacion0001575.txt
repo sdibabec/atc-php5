@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1102,
+                            '2020-10-17 09:00',
+                            '07:00',
+                            'Q2FsemFkYSBkZSBUbGFscGFuIDE0NDcgZGVwdG8gODA5IENvbC4gUG9ydGFsZXMgTm9ydGUsIEIuIEp1YXJleiBlc3F1aW5hIEVtcGVyYWRvcmVzIHkgUHJlc2lkZW50ZXM=',
+                            'SW5kaWNhIGVsZXZhZG8gc3ViZSBkaXJlY3RvIGFsIHJvb2YgZ2FyZGVu',
+                            2,
+                            NULL,
+                            '2020-10-16 14:00:53',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1575, 57, 1, 2, 270.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1575, '8 mod. grande indv bco y 1 mesas lounge blanca', 850,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1575, '8 mod. grande indv bco y 1 mesas lounge blanca', 850,0) 
+
+

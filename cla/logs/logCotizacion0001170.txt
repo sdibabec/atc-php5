@@ -1,0 +1,42 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-02-16 20:00',
+                            '18:00',
+                            'UmljYXJkbyBNb250aWVsIA==',
+                            'Q2VudHJvIENpdHkgQmFuYW1leA==',
+                            2,
+                            NULL,
+                            '2020-01-30 19:02:10') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1170, 11, 2, 2, 150.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1170, 69, 1, 2, 180.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1170, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1170, 'Servicio por 4 días mas', 2120,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-16 20:00',
+                            tmHoraMontaje = '18:00',
+                            tDireccion = 'UmljYXJkbyBNb250aWVsIA==',
+                            tObservaciones = 'Q2VudHJvIENpdHkgQmFuYW1leA==',
+                            bIVA = 1
+                            WHERE eCodEvento = 0001170 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001170, 11, 2, 2, 150.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001170, 69, 1, 2, 180.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001170, 60, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001170, 'Servicio por 4 días mas', 2120,0) 
+
+

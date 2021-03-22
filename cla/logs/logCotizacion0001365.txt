@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            16,
+							1,
+                            1018,
+                            '2020-03-14 07:00',
+                            '05:00',
+                            'QXYuIEN1YXVodGVtb2MgIzIwMiwgRG9jdG9yZXM=',
+                            'U3ViaXIgcG9yIGVzY2FsZXJhIDUgcGlzb3M=',
+                            2,
+                            NULL,
+                            '2020-03-12 15:34:53',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1365, 79, 6, 2, 1680.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1365, 47, 24, 2, 840.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1365, '5 pisos por escalera', 750,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-03-14 07:00',
+                            tmHoraMontaje = '05:00',
+                            tDireccion = 'QXYuIEN1YXVodGVtb2MgIzIwMiwgRG9jdG9yZXM=',
+                            tObservaciones = 'U3ViaXIgcG9yIGVzY2FsZXJhIDUgcGlzb3M=',
+                            bIVA = NULL,
+                            bExpress = 1
+                            WHERE eCodEvento = 0001365 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001365, 79, 6, 2, 1680.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001365, 47, 24, 2, 840.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001365, '5 pisos por escalera', 750,0) 
+
+

@@ -1,0 +1,32 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1234,
+                            '2021-01-23 09:00',
+                            '07:00',
+                            'MmRhLiBjZXJyYWRhIGRlIFRhbnRvY28gcy9uICBjYXNhIDEwIEJhcnJpbyBTYW4gRnJhbmNpc2NvLCBNLiBDb250cmVyYXMgZGVudHJvIGRlbCBGcmFjY2lvbmFtaWVudG8gTGEgUHJlc2lsbGEgcXVlIHNlIGVuY3VlbnRyYSBzb2JyZSBBdi4gU2FuIEZyYW5jaXNjby4=',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2021-01-19 18:54:37',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1792, 194, 2, 2, 2400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1792, 49, 2, 2, 1000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1792, 50, 4, 2, 1400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1792, 51, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1792, 'Tablon con mantel blanco', 0.00,0) 
+
+

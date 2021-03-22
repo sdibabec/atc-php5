@@ -1,0 +1,39 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            686,
+                            '2020-10-17 08:00',
+                            '06:00',
+                            'Q290aXphY2lvbiBTcml0YS4gQ2xhdWRpYSBIZXJuYW5kZXo=',
+                            'WA==',
+                            2,
+                            NULL,
+                            '2020-10-14 11:12:09',
+                            NULL) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-10-17 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'Q290aXphY2lvbiBTcml0YS4gQ2xhdWRpYSBIZXJuYW5kZXo=',
+                            tObservaciones = 'WA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001567 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001567, 45, 4, 2, 480.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001567, 'Flete para col. Centro', 300,0) 
+
+

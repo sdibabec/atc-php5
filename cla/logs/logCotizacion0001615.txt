@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1013,
+                            '2020-10-31 12:00',
+                            '10:00',
+                            'UGV0ZW4gODIgLSAyMDEgQ29sLiBOYXJ2YXJ0ZSwgQi4gSnVhcmV6IGVudHJlIFhvbGEgeSBDdW1icmVzIGRlIE1hbHRyYXRhLg==',
+                            'U2Ugb2N1cGEgZWxldmFkb3IgYWwgNHRvIHBpc28sIGVuIGNhc28gZGUgbm8gY2FiZXIgbWVzYSBwb3IgZXNjYWxlcmEgcGVybyBkYXJhIHByb3BpbmEgcG9yIHN1YmlyIHkgYmFqYXIu',
+                            2,
+                            NULL,
+                            '2020-10-29 16:59:08',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1615, 143, 10, 2, 150.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1615, 'Tablon cuadrado con mantel blanco y sombrilla ', 300,0) 
+
+

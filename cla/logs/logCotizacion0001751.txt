@@ -1,0 +1,41 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1202,
+                            '2020-12-23 08:00',
+                            '06:00',
+                            'QXYuIFBhc2VvIGRlbCBSaW8gIyAyMiBDb2wuIENoaW1hbGlzdGFjIFNhbiBBbmdlbCwgQS4gT2JyZWdvbiBlbnRyZSAgY2FsbGVqb24gZGVsIEh1ZXJ0byB5IERlbCBzZWNyZXRv',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2020-12-17 17:49:14',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1751, 194, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1751, 'Diferencia del calentador', 50,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-12-24 08:00',
+                            tmHoraMontaje = '06:00',
+                            tDireccion = 'QXYuIFBhc2VvIGRlbCBSaW8gIyAyMiBDb2wuIENoaW1hbGlzdGFjIFNhbiBBbmdlbCwgQS4gT2JyZWdvbiBlbnRyZSAgY2FsbGVqb24gZGVsIEh1ZXJ0byB5IERlbCBzZWNyZXRv',
+                            tObservaciones = 'UC5CLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001751 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001751, 194, 1, 2, 1200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001751, 'Diferencia del calentador', 50,0) 
+
+

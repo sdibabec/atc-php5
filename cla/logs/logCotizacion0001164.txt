@@ -1,0 +1,46 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1,
+                            '2020-05-30 18:00',
+                            '16:00',
+                            'U3JpdGEuIExhdXJhIExlw7Nu',
+                            'UmVjb21lbmRhZG8gcG9yIGxhIFNyaXRhLiBKYXNpdmU=',
+                            1,
+                            NULL,
+                            '2020-01-29 13:40:44') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1164, 254, 1, 1, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1164, 256, 1, 2, 500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1164, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1164, 331, 3, 2, 1650.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1164, '3 Horas extras $ 1,600.00', 4800,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-05-30 18:00',
+                            tmHoraMontaje = '16:00',
+                            tDireccion = 'U3JpdGEuIExhdXJhIExlw7Nu',
+                            tObservaciones = 'UmVjb21lbmRhZG8gcG9yIGxhIFNyaXRhLiBKYXNpdmU=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001164 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001164, 254, 1, 1, 4800.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001164, 256, 1, 2, 500.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001164, 255, 1, 2, 300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001164, 331, 2, 2, 1100.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001164, '3 Horas extras $ 1,450.00', 4350,0) 
+
+

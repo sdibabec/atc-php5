@@ -1,0 +1,32 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1156,
+                            '2020-11-27 21:00',
+                            '19:00',
+                            'QWxtaWNhciBWaWRhbCA3NCBDYXNhIEYgTG9tYXMgZGUgTWVtZXRsYSwgQ3VhamltYWxwYSBlbnRyZSBBbnRvbmlvIE5vaGVtaSB5IENhcnJldGVyYSBNZXhpY28gVG9sdWNh',
+                            'UC5CLiBwcmltZXJhIGNhc2EgZGVsIEZyYWNjaW9uYW1pZW50bw==',
+                            1,
+                            NULL,
+                            '2020-11-26 15:58:36',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1676, 266, 5, 1, 2600.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1676, 145, 1, 1, 3200.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1676, '2 mamparas cortesia Jaime', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1676, '4 led arquitectonica de cortesia Jaime', 0.00,0) 
+
+

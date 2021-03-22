@@ -1,0 +1,30 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1225,
+                            '2020-12-31 14:00',
+                            '12:00',
+                            'RWxldXRlcmlvIE1lbmRleiA4MyBDbzBsLiBzYW4gU2ltb24gVGljdW1hYywgQi4gSnVhcmV6IGVudHJlIENhbmFyaWFzIHkgRWxldXRlcmlvIE1lbmRleg==',
+                            'UC5CLg==',
+                            2,
+                            NULL,
+                            '2020-12-31 13:50:07',
+                            1) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1780, 81, 2, 2, 400.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1780, 143, 24, 2, 360.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1780, 'Descuento por ser amigo $320.00', 0.00,0) 
+
+

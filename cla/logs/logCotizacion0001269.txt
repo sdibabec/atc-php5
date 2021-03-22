@@ -1,0 +1,27 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            22,
+                            '2020-02-28 11:30',
+                            '09:30',
+                            'UmlvIE5pbG8gIzcxLCBDb2wuIEN1YXVodGVtb2MuIEN1YXVodGVtb2MNCkVzcXVpbmEgY29uIFJpbyBMZXJtYSA=',
+                            'cGI=',
+                            2,
+                            NULL,
+                            '2020-02-25 11:17:36') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1269, 174, 10, 1, 2950.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1269, '4 juego periquera cromo negro sin mantel 20 sillas ', 1000,0) 
+
+

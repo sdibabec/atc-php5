@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1150,
+                            '2020-11-21 08:00',
+                            '06:00',
+                            'Qm9zcXVlIGRlIEFuZ29sYSA3MTAgQm9zcXVlcyBkZSBBcmFnw7NuLCBOZXphIGVudHJlIEIuIGRlIEFmcmljYSB5IEJvc3F1ZSBkZSBDb250aW5lbnRlcw==',
+                            'UC5CLiBjYXJwYSBlbiB1biBwYXRpby4=',
+                            2,
+                            NULL,
+                            '2020-11-20 16:20:04',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1665, 103, 1, 1, 1500.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1665, 'Diferencia de sillones ', 180,0) 
+
+

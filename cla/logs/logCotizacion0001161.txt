@@ -1,0 +1,74 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            9,
+							1,
+                            904,
+                            '2020-02-01 17:30',
+                            '15:30',
+                            'U2FuIFBlZHJvIE1hcnRpcg==',
+                            'Q290aXphY2lvbg==',
+                            2,
+                            NULL,
+                            '2020-01-28 15:13:03') 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1161, 275, 1, 1, 5300.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 17:30',
+                            tmHoraMontaje = '15:30',
+                            tDireccion = 'U2FuIFBlZHJvIE1hcnRpcg==',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001161 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 275, 1, 1, 5300.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 331, 1, 2, 550.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 17:30',
+                            tmHoraMontaje = '15:30',
+                            tDireccion = 'U2FuIFBlZHJvIE1hcnRpcg==',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001161 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 371, 1, 1, 4700.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 331, 1, 2, 550.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 17:30',
+                            tmHoraMontaje = '15:30',
+                            tDireccion = 'U2FuIFBlZHJvIE1hcnRpcg==',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001161 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 331, 2, 2, 1100.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 61, 30, 2, 3000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 60, 3, 2, 0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 269, 1, 2, 0,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-01 17:30',
+                            tmHoraMontaje = '15:30',
+                            tDireccion = 'U2FuIFBlZHJvIE1hcnRpcg==',
+                            tObservaciones = 'Q290aXphY2lvbg==',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001161 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 61, 30, 2, 3000.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 331, 2, 2, 1100.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 60, 3, 2, 600.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001161, 269, 1, 2, 1000.00,0) 
+
+

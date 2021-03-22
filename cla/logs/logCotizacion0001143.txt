@@ -1,0 +1,12 @@
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-02-15 10:30',
+                            tmHoraMontaje = '08:30',
+                            tDireccion = 'UklPIFNFTkEgIzM3IElOVC4gMzAxLCBDT0wuIENVQVVIVEVNT0MsIENVQVVIVEVNT0MgDQpFTlRSRSBDQUxMRSBSSU8gTkFaQVMgWSBDQUxMRSBSSU8gUEFOVUNPLCA=',
+                            tObservaciones = 'IlRFUlJBWkEgREUgVU4gQ1VBUlRPIFBJU08gQ09OIEVMRVZBRE9SLiI=',
+                            bIVA = NULL
+                            WHERE eCodEvento = 0001143 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001143, 174, 11, 1, 3245.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001143, 81, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001143, '5 sillas plegables negras ', 100,0) 
+
+

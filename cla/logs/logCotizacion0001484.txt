@@ -1,0 +1,31 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1046,
+                            '2020-08-15 09:30',
+                            '07:30',
+                            'TmFodWF0bGFjYXMgMSBBY29uIExvcyBSZXllcyBBY2FxdWlscGFuLCBDcC4gNTY0MTAgZW50cmUgVGVub2N0aXTDoW4geSBBdi4gUGFudGl0bGFu',
+                            'Q2xpZW50ZSBwb3IgMmRhLiBvY2FzacOzbiBlbiBlbCBtaXNtbyBtZXMu',
+                            2,
+                            NULL,
+                            '2020-08-12 15:52:38',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1484, 90, 3, 1, 4950.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1484, 333, 1, 2, 1000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1484, '6 Modulares dobles blanco, se cambian por bancas', 0.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1484, 'Descuento de $495.00', 0.00,0) 
+
+

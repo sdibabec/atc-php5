@@ -1,0 +1,32 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							2,
+                            1073,
+                            '2020-10-29 21:00',
+                            '19:00',
+                            'T3NhIE1lbm9yICAjIDIwNiBDb2wuIFByYWRvIENodXJ1YnVzY28sIENveW9hY2FuLiBFbnRyZSBUcmlhbmd1bG8geSBDZW50YXVyby4g',
+                            'UC5CLiBGYWNoYWRhIHZlcmRlLg0KU2VndW5kYSB2ZXogcXVlIGNvbnRyYXRhLg==',
+                            1,
+                            NULL,
+                            '2020-10-27 18:08:56',
+                            1) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1610, 94, 6, 1, 1890.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1610, 250, 1, 2, 550.00,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1610, 333, 1, 2, 1000.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1610, 'Set de barra, 40 vasos, 8 ceniceros y 6 veladoras ', 150,0) 
+
+

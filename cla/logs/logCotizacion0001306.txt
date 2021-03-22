@@ -1,0 +1,28 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha)
+                            VALUES
+                            (
+                            19,
+							1,
+                            993,
+                            '2020-03-06 20:00',
+                            '18:00',
+                            'QmVudmVudXRvIENlbGxpbmkgIzEwNSwgQ29sLiBBbGZvbnNvIFhsbGwuIEFsdmFybyBPYnJlZ29uLiAgDQpDYXNhIGVuIGVzcXVpbmEgY29uIHBvcnRvbiBjYWZl',
+                            'Rmllc3RhIHNvcnByZXNhIDYwIGFub3MsIGxpc3RvcyBhIGxhcyA2IHBtIHlhIHF1ZSBlcyB1bmEgZmllc3RhIHNvcnByZXNhLCBsYSBnZW50ZSBsbGVnYSA3IHBtIHkgZWwgaW52aXRhZG8gYSBsYXMgOCBwbS4=',
+                            1,
+                            NULL,
+                            '2020-03-03 12:37:55') 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1306, 21, 6, 2, 2700.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1306, 'Operador pista iluminada ', 500,0) 
+
+

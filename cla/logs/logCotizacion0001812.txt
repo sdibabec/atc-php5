@@ -1,0 +1,46 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1246,
+                            '2021-02-12 11:00',
+                            '09:00',
+                            'QW1vcmVzIDcxNSBkZXBhcnRhbWVudG8gNzAxIENvbC4gRGVsIFZhbGxlIENlbnRybywgQi4gSnVhcmV6IGVudHJlICBDb25jZXBjaW9uIEJlc3RlZ3VpIHkgRXVnZW5pYQ==',
+                            'SW5kaWNhIGNsaWVudGUgc2Ugb2N1cGEgZWxldmFkb3IgeSBsbyBxdWUgbm8gcXVlcGEgcG9yIGVzY2FsZXJhLCBkYXLDoSBwcm9waW5hLg==',
+                            1,
+                            NULL,
+                            '2021-02-11 13:13:18',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1812, 387, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1812, '10 sillas tiffany blancas con cojin', 330,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1812, '10 servilletas de tela color coral', 50,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-02-12 11:00',
+                            tmHoraMontaje = '09:00',
+                            tDireccion = 'QW1vcmVzIDcxNSBkZXBhcnRhbWVudG8gNzAxIENvbC4gRGVsIFZhbGxlIENlbnRybywgQi4gSnVhcmV6IGVudHJlICBDb25jZXBjaW9uIEJlc3RlZ3VpIHkgRXVnZW5pYQ==',
+                            tObservaciones = 'SW5kaWNhIGNsaWVudGUgc2Ugb2N1cGEgZWxldmFkb3IgeSBsbyBxdWUgbm8gcXVlcGEgcG9yIGVzY2FsZXJhLCBkYXLDoSBwcm9waW5hLg==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001812 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001812, 387, 1, 2, 200.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001812, '10 sillas tiffany blancas con cojin', 330,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001812, '10 servilletas de tela color coral', 50,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001812, '10 Platos trinche', 80,0) 
+
+

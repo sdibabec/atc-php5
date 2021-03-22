@@ -1,0 +1,43 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            19,
+							1,
+                            520,
+                            '2020-03-27 08:30',
+                            '06:30',
+                            'IkVTQ1VFTEEgSVRBTSIgUmlvIEhvbmRvICMxLCBDb2wuIEFsdGF2aXN0YSwgQWx2YXJvIE9icmVnb24sICANClNUQU5EIERFIEdOUCBNT05UQURPICBFTiBFTCBFVkVOVE8gQlJBSU5RVUVTVCBFTiBMQSBQTEFaQSBQQUxNRVJBUywgUEFSQSBNRUpPUiBVQklDQUNJT04gSU5HUkVTQVIgUE9SIEVMIEVTVEFDSU9OQU1JRU5UTw==',
+                            'RVNUQUNJT05BTUlFTlRPIEZST05UQUwgREVMIElUQU0gWSAgU1VCSVIgREVMIExBRE8gSVpRVUlFUkRPIEhBU1RBIEVMIEZPTkRPICAgICAgICAgICAgICAgIA==',
+                            2,
+                            NULL,
+                            '2020-03-11 11:37:13',
+                            NULL) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1355, 126, 1, 1, 650.00,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1355, 'Entrega', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1355, 'Flete', 300,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-05-02 08:30',
+                            tmHoraMontaje = '06:30',
+                            tDireccion = 'IkVTQ1VFTEEgSVRBTSIgUmlvIEhvbmRvICMxLCBDb2wuIEFsdGF2aXN0YSwgQWx2YXJvIE9icmVnb24sICANClNUQU5EIERFIEdOUCBNT05UQURPICBFTiBFTCBFVkVOVE8gQlJBSU5RVUVTVCBFTiBMQSBQTEFaQSBQQUxNRVJBUywgUEFSQSBNRUpPUiBVQklDQUNJT04gSU5HUkVTQVIgUE9SIEVMIEVTVEFDSU9OQU1JRU5UTw==',
+                            tObservaciones = 'RVNUQUNJT05BTUlFTlRPIEZST05UQUwgREVMIElUQU0gWSAgU1VCSVIgREVMIExBRE8gSVpRVUlFUkRPIEhBU1RBIEVMIEZPTkRPICAgICAgICAgICAgICAgIA==',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001355 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001355, 126, 1, 1, 650.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001355, 'Entrega', 200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001355, 'Flete', 300,0) 
+
+

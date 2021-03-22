@@ -1,0 +1,95 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            1060,
+                            '2020-11-07 17:00',
+                            '15:00',
+                            'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            'WA==',
+                            1,
+                            NULL,
+                            '2020-08-26 11:34:58',
+                            NULL) 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (1491, 73, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (1491, 102, 6, 2, 2400.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-07 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            tObservaciones = 'RXF1aXBvIGRlIGNvY3RlbGVyaWEsIFhWIGHDsW9zLCBzdWJpciAyIHBpc29zIHBvciBlc2NhbGVyYSBhbmdvc3RhcyBtYWwgcGxhbmVhZGFzIHkgbWFsIGhlY2hhcy4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001491 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001491, 73, 1, 1, 6500.00,0,0) 
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma) VALUES (0001491, 102, 6, 2, 2400.00,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2020-11-07 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            tObservaciones = 'RXF1aXBvIGRlIGNvY3RlbGVyaWEsIFhWIGHDsW9zLCBzdWJpciAyIHBpc29zIHBvciBlc2NhbGVyYSBhbmdvc3RhcyBtYWwgcGxhbmVhZGFzIHkgbWFsIGhlY2hhcy4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001491 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001491, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001491, '20 mod. ch.bco 3 mesas lounge ', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-02-05 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            tObservaciones = 'RXF1aXBvIGRlIGNvY3RlbGVyaWEsIFhWIGHDsW9zLCBzdWJpciAyIHBpc29zIHBvciBlc2NhbGVyYSBhbmdvc3RhcyBtYWwgcGxhbmVhZGFzIHkgbWFsIGhlY2hhcy4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001491 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001491, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001491, '20 mod. ch.bco 3 mesas lounge ', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-03-06 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            tObservaciones = 'RXF1aXBvIGRlIGNvY3RlbGVyaWEsIFhWIGHDsW9zLCBzdWJpciAyIHBpc29zIHBvciBlc2NhbGVyYSBhbmdvc3RhcyBtYWwgcGxhbmVhZGFzIHkgbWFsIGhlY2hhcy4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001491 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001491, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001491, '20 mod. ch.bco 3 mesas lounge ', 1200,0) 
+
+
+UPDATE BitEventos SET
+                            fhFechaEvento = '2021-04-10 17:00',
+                            tmHoraMontaje = '15:00',
+                            tDireccion = 'Tm9ydGUgNzJBICMgMzcxNSBDb2wuIExhIEpveWEsIEdBTSBlbnRyZSBPcmllbnRlIDg3IHkgT3JpZW50ZSA5MQ0KQ2VyY2EgZGVsIG1ldHJvIFJpbyBDb25zdWxhZG8gbyBNZXRyb2J1cyBTYW50YSBDb2xldGEu',
+                            tObservaciones = 'RXF1aXBvIGRlIGNvY3RlbGVyaWEsIFhWIGHDsW9zLCBzdWJpciAyIHBpc29zIHBvciBlc2NhbGVyYSBhbmdvc3RhcyBtYWwgcGxhbmVhZGFzIHkgbWFsIGhlY2hhcy4g',
+                            bIVA = NULL,
+                            bExpress = NULL
+                            WHERE eCodEvento = 0001491 
+
+INSERT INTO RelEventosPaquetes (eCodEvento, eCodServicio, eCantidad,eCodTipo,dMonto,bSuma,eHorasExtra) VALUES (0001491, 15, 1, 1, 6100.00,0,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (0001491, '20 mod. ch.bco 3 mesas lounge ', 1200,0) 
+
+

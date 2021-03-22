@@ -1,0 +1,29 @@
+INSERT INTO BitEventos (
+                            eCodUsuario,
+							eCodEstatus,
+                            eCodCliente,
+                            fhFechaEvento,
+                            tmHoraMontaje,
+                            tDireccion,
+                            tObservaciones,
+                            eCodTipoDocumento,
+                            bIVA,
+                            fhFecha,
+                            bExpress)
+                            VALUES
+                            (
+                            9,
+							1,
+                            126,
+                            '2020-09-18 11:00',
+                            '09:00',
+                            'VGVuYXl1Y2EgNDQgQ29sLiBWZXJ0aXogTmFydmFydGUgIGVudHJlIFRlbmF5dWNhIHkgTWF0aWFzIFJvbWVybw0K',
+                            'UmVzdGF1cmFudGUgbGEgUGFycmlsbGEgU3VpemE=',
+                            2,
+                            NULL,
+                            '2020-09-17 11:47:11',
+                            NULL) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1521, '6 unifilas ', 1200,0) 
+INSERT INTO RelEventosExtras (eCodEvento, tDescripcion, dImporte,bSuma) VALUES (1521, '1 pasillo de alfombra ', 400,0) 
+
+
